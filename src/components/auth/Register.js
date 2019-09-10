@@ -66,10 +66,10 @@ class Register extends Component {
                             placeholder="Password"
                             required="" />
                     </div>
-                    <button outline color="dark" size="sm" type="submit">
+                    <button color="dark" size="sm" type="submit">
                         Submit
             </button>
-            <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
+            <button color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
                         Cancel
             </button>
                 </fieldset>

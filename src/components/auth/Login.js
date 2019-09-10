@@ -29,6 +29,7 @@ class Login extends Component {
                 document.querySelector("#username").value = ""
                 document.querySelector("#password").value = ""
             } else {
+                this.setState({id: user[0].id})
                 sessionStorage.setItem(
                         "credentials",
                     JSON.stringify({
