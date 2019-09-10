@@ -58,8 +58,9 @@ class Dashboard extends Component {
               this.setState({
                   audio: blob
               })
-              this.uploadAudioToFirebase()
-            //   this.getSong()
+              this.uploadAudioToFirebase().then(() => {
+                    this.getSong()
+              })
               console.log("audioURL", audioURL)
             }
             this.state.mediaRecorder.ondataavailable = e => {
@@ -75,7 +76,7 @@ class Dashboard extends Component {
     uploadAudioToFirebase = () => {
         const audioBlobsRef = firebase.storage().ref('audioBlobs');
         const childRef = audioBlobsRef.child(`${Date.now()}`)
-        childRef.put(this.state.audio)
+        return childRef.put(this.state.audio)
             .then(response => response.ref.getDownloadURL())
             .then(url => {
                 console.log("upload")
