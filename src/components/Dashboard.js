@@ -4,6 +4,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
 import AuddManager from "../modules/AuddManager";
+import SongList from "./sidebar/SongList"
 
 
 
@@ -13,7 +14,19 @@ class Dashboard extends Component {
         audioURL: "",
         recording: false,
         mediaRecorder: null,
-        audio: ""
+        audio: "",
+        songs: []
+    }
+
+    componentDidMount() {
+        this.updateSongs()
+    }
+
+    updateSongs = () => {
+        AudioManager.getAll().then(songs => {
+            this.setState({songs: songs})
+        })
+        console.log("testing update songs")
     }
 
     async getMicrophone() {
@@ -24,7 +37,7 @@ class Dashboard extends Component {
     }
 
     toggleMicrophone = () => {
-        if(this.state.recording) {
+        if (this.state.recording) {
             this.stopRecording()
             console.log("stop recording")
         } else {
@@ -35,40 +48,37 @@ class Dashboard extends Component {
 
     startRecording = () => {
         this.getMicrophone().then(stream => {
-            this.setState({recording: true})
+            this.setState({ recording: true })
             const mediaRecorder = new MediaRecorder(stream)
             mediaRecorder.start()
-            this.setState({mediaRecorder: mediaRecorder})
+            this.setState({ mediaRecorder: mediaRecorder })
         })
     }
-    
+
     stopRecording = () => {
         this.getMicrophone().then(stream => {
-            this.setState({recording: false})
+            this.setState({ recording: false })
             this.state.mediaRecorder.stop()
             let chunks = [];
-            let url = ""
-            // let audioBlob = null
+            // let url = ""
             this.state.mediaRecorder.onstop = e => {
-              const blob = new Blob(chunks, { 'type' : 'audio/ogg; codecs=opus' });
-              const audioURL = window.URL.createObjectURL(blob);
-              url = audioURL
-            //   audioBlob = blob
-              console.log(blob)
-              this.setState({
-                  audio: blob
-              })
-              this.uploadAudioToFirebase().then(() => {
+                const blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
+                const audioURL = window.URL.createObjectURL(blob);
+                // url = audioURL
+                console.log(blob)
+                this.setState({
+                    audio: blob
+                })
+                this.uploadAudioToFirebase().then(() => {
                     this.getSong()
-              })
-              console.log("audioURL", audioURL)
+                })
+                console.log("audioURL", audioURL)
             }
             this.state.mediaRecorder.ondataavailable = e => {
-              chunks.push(e.data);
+                chunks.push(e.data);
             }
+
             console.log(this.state.audio)
-            
-            // this.getSong()
         })
     }
 
@@ -88,21 +98,32 @@ class Dashboard extends Component {
 
     getSong = () => {
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+        console.log(this.state.audio.size)
+        if (this.state.audio.size < 13000) {
+            console.log("Sorry, No Results")
+        } else {
         AuddManager.get(this.state.audioURL)
             .then(foundSong => {
                 console.log(foundSong)
-    //             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title}&api_token=fc69fba20d9a402ff3696cbd41daf5d4`).then(data => data.json())
-    //                 .then(lyrics => {
-    //                     console.log(lyrics.result[0].lyrics)
-    //                     AudioManager.post({
-    //                         title: foundSong.result.list[0].title,
-    //                         lyrics: lyrics.result[0].lyrics,
-    //                         userId: currentUser.id,
-    //                         audioURL: this.state.audioURL,
-    //                         comments: ""
-    //                     })
-    //                 })
+                if (foundSong.result !== null) {
+                    fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title}&api_token=fc69fba20d9a402ff3696cbd41daf5d4`).then(data => data.json())
+                        .then(lyrics => {
+                            console.log(lyrics.result[0].lyrics)
+                            AudioManager.post({
+                                title: foundSong.result.list[0].title,
+                                lyrics: lyrics.result[0].lyrics,
+                                userId: currentUser.id,
+                                audioURL: this.state.audioURL,
+                                comments: ""
+                            })
+                            this.updateSongs()
+                        })
+                } else {
+                    console.log("Sorry, No Results")
+                }
+            
             })
+        }
     };
 
     signOut = () => {
@@ -143,6 +164,11 @@ class Dashboard extends Component {
                 <Form onSubmit={this.getSong}>
                     <Button type="submit" content="Search" color="blue" />
                 </Form>
+                <SongList 
+                    updateSongs={this.updateSongs}
+                    songs={this.state.songs}
+                    {...this.props}
+                />
             </>
         )
     }
