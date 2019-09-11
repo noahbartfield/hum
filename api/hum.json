@@ -15,20 +15,28 @@
   ],
   "songs": [
     {
+      "id": 3,
       "title": "We Will Rock You",
       "lyrics": "[Verse 1]\r\n Buddy, you’re a boy, make a big noise\r\n Playing in the street, gonna be a big man someday\r\n You got mud on your face, you big disgrace\r\n Kicking your can all over the place (singing)\r\n \r\n [Chorus]\r\n We will, we will rock you\r\n We will, we will rock you\r\n \r\n [Verse 2]\r\n Buddy, you’re a young man, hard man\r\n Shouting in the street, gonna take on the world someday\r\n You got blood on your face, you big disgrace\r\n Waving your banner all over the place\r\n \r\n [Chorus]\r\n We will, we will rock you (sing it out)\r\n We will, we will rock you\r\n \r\n [Verse 3]\r\n Buddy, you’re an old man, poor man\r\n Pleading with your eyes, gonna make you some peace someday\r\n You got mud on your face, big disgrace\r\n Somebody better put you back into your place\r\n \r\n [Chorus]\r\n We will, we will rock you (sing it)\r\n We will, we will rock you (everybody)\r\n We will, we will rock you\r\n We will, we will rock you\r\n \r\n Alright",
-      "userId": 2,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568045920297?alt=media&token=9abcbc35-830f-48db-8b38-782154ab6f2c",
-      "comments": "",
-      "id": 3
+      "userId": 1,
+      "comments": "Queen"
     },
     {
+      "id": 4,
       "title": "Girl",
       "lyrics": "[Verse 1]\r\n Is there anybody going to listen to my story\r\n All about the girl who came to stay?\r\n She's the kind of girl you want so much\r\n It makes you sorry\r\n Still, you don't regret a single day\r\n Ah girl\r\n Girl, girl\r\n \r\n [Verse 2]\r\n When I think of all the times I've tried so hard to leave her\r\n She will turn to me and start to cry\r\n And she promises the earth to me\r\n And I believe her\r\n After all this times I don't know why\r\n Ah, girl\r\n Girl, girl\r\n \r\n [Verse 3]\r\n She's the kind of girl who puts you down\r\n When friends are there, you feel a fool\r\n When you say she's looking good\r\n She acts as if it's understood\r\n She's cool, cool, cool, cool\r\n Girl\r\n Girl, girl\r\n \r\n [Verse 4]\r\n Was she told when she was young that pain\r\n Would lead to pleasure?\r\n Did she understand it when they said\r\n That a man must break his back to earn\r\n His day of leisure?\r\n Will she still believe it when he's dead?\r\n Ah girl\r\n Girl, girl\r\n \r\n [Outro]\r\n Ah girl\r\n Girl, girl",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568222004292?alt=media&token=17b964ff-c941-4f96-ac90-ed915a043301",
       "userId": 2,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568149708997?alt=media&token=606bc58a-2495-4690-8041-d9b26beed5f6",
+      "comments": "Great Testing1"
+    },
+    {
+      "title": "Yellow Submarine (Documentary)",
+      "lyrics": "[Verse 1]\r\n In the town where I was born\r\n Lived a man who sailed to sea\r\n And he told us of his life\r\n In the land of submarines\r\n \r\n [Verse 2]\r\n So we sailed up to the sun\r\n Till we found the sea of green\r\n And we lived beneath the waves\r\n In our yellow submarine\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Verse 3]\r\n And our friends are all aboard\r\n Many more of them live next door\r\n And the band begins to play\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Bridge]\r\n Full speed ahead, Mr. Parker, full speed ahead\r\n Full speed over here, sir\r\n Action station, action station\r\n Aye, aye, sir, fire\r\n Heaven, heaven\r\n \r\n [Verse 4]\r\n As we live a life of ease\r\n Everyone of us has all we need  (has all we need)\r\n Sky of blue (sky of blue) and sea of green (and sea of green)\r\n In our (In our) yellow submarine (yellow submarine, ha-ha!)\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine",
+      "userId": 2,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568229581006?alt=media&token=1e90ff0e-d6ee-455e-9227-2372d4798e6c",
       "comments": "",
-      "id": 4
+      "id": 5
     }
   ],
   "themes": [

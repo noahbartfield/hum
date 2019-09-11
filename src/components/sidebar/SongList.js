@@ -23,6 +23,7 @@ class SongList extends Component {
                             return <SongButton
                                 key={song.id}
                                 song={song}
+                                
                                 // deleteSong={this.deleteSong}
                                 {...this.props}
                                 // didMountFunction={this.didMountFunction}
