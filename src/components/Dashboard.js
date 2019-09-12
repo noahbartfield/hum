@@ -1,5 +1,5 @@
 import React, { Component, createRef } from "react"
-import { Button, Header, Form, Sidebar, Segment } from 'semantic-ui-react'
+import { Button, Header, Form, Sidebar, Segment, Modal } from 'semantic-ui-react'
 import * as firebase from 'firebase/app';
 import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
@@ -16,7 +16,12 @@ class Dashboard extends Component {
         recording: false,
         mediaRecorder: null,
         audio: "",
-        songs: []
+        songs: [],
+        title: "",
+        lyrics: "",
+        comments: "",
+        showModal: false,
+        active: false
     }
 
     componentDidMount() {
@@ -91,7 +96,6 @@ class Dashboard extends Component {
 
     getSong = () => {
         this.uploadAudioToFirebase().then(() => {
-            const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
             console.log(this.state.audio.size)
             if (this.state.audio.size < 13000) {
                 console.log("Sorry, No Results")
@@ -99,21 +103,17 @@ class Dashboard extends Component {
                 AuddManager.get(this.state.audioURL)
                     .then(foundSong => {
                         console.log(foundSong)
-                        if (foundSong.result !== null && foundSong.result.lyrics === null) {
-                            console.log("Sorry, no results")
-                        } else if (foundSong.result !== null) {
+                        if (foundSong.result !== null) {
                             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=fc69fba20d9a402ff3696cbd41daf5d4`).then(data => data.json())
                                 .then(lyrics => {
+                                    console.log(lyrics)
                                     console.log(lyrics.result[0].lyrics)
-                                    AudioManager.post({
+                                    this.setState({
                                         title: foundSong.result.list[0].title,
                                         lyrics: lyrics.result[0].lyrics,
-                                        userId: currentUser.id,
-                                        audioURL: this.state.audioURL,
-                                        comments: ""
-                                    }).then(() => {
-                                        this.updateSongs()
                                     })
+                                    // this.updateSongs()  
+                                    this.toggleModal()
                                 })
                         } else {
                             console.log("Sorry, No Results")
@@ -122,6 +122,47 @@ class Dashboard extends Component {
             }
         })
     };
+
+    addSong = () => {
+        const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+        AudioManager.post({
+            title: this.state.title,
+            lyrics: this.state.lyrics,
+            userId: currentUser.id,
+            audioURL: this.state.audioURL,
+            comments: this.state.comments
+        }).then(() => {
+            this.updateSongs()
+            this.toggleModal()
+            this.setState({
+                audioURL: "",
+                recording: false,
+                mediaRecorder: null,
+                audio: "",
+                title: "",
+                lyrics: "",
+                comments: "",
+                showModal: false,
+                active: false
+            })
+        })
+    }
+
+    handleFieldChange = evt => {
+        const stateToChange = {}
+        stateToChange[evt.target.id] = evt.target.value
+        this.setState(stateToChange)
+    }
+
+    open = () => this.setState({ showModal: true })
+
+    close = () => this.setState({ showModal: false,  active: !this.state.active})
+
+    toggleModal = () => {
+        this.setState({
+            active: !this.state.active
+        })
+    }
 
     signOut = () => {
         sessionStorage.clear()
@@ -132,46 +173,60 @@ class Dashboard extends Component {
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
         return (
             <>
-            <div className="dashboardContainer">
-                <div>
-                <div className="dashboard">
-                    <h3>{currentUser.username}</h3>
-                    <Button onClick={this.signOut}>Sign Out</Button>
-                </div>
-                <Header as='h1' textAlign='center'>hum</Header>
-                <div className="App">
-                    <main>
-                        <div className="controls">
-
-                            <div align="center">
-                                <Button onClick={this.toggleMicrophone} className="ui circular icon button red massive">
-                                    {this.state.recording ? 'Stop' : 'Start'}
-                                </Button>
-                            </div>
+                <div className="dashboardContainer">
+                    <div>
+                        <div className="dashboard">
+                            <h3>{currentUser.username}</h3>
+                            <Button onClick={this.signOut}>Sign Out</Button>
                         </div>
-                    </main>
-                </div>
-                <Form onSubmit={this.getSong}>
-                    <Form.Field
-                        control="input"
-                        type="file"
-                        label="User Audio"
-                        onChange={(e) => this.setState({ audio: e.target.files[0] })}
-                    />
-                    <Button type="submit" content="Save" color="purple" />
-                </Form>
-                {/* <Form onSubmit={this.getSong}>
+                        <Header as='h1' textAlign='center'>hum</Header>
+                        <div className="App">
+                            <main>
+                                <div className="controls">
+
+                                    <div align="center">
+                                        <Button onClick={this.toggleMicrophone} className="ui circular icon button red massive">
+                                            {this.state.recording ? 'Stop' : 'Start'}
+                                        </Button>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                        {this.state.active &&
+                            <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button>View Results</Button>} closeIcon>
+                                <Modal.Header>{this.state.title.split('(')[0]}</Modal.Header>
+                                <Modal.Content>
+                                    <p>{this.state.lyrics}</p>
+                                </Modal.Content>
+                                <Modal.Content>
+                                    <h3>Comments</h3>
+                                    <label htmlFor="comments"></label>
+                                    <textarea rows="4" cols="30" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
+                                </Modal.Content>
+                                <Button onClick={this.addSong}>Save</Button>
+                            </Modal>
+                        }
+                        <Form onSubmit={this.getSong}>
+                            <Form.Field
+                                control="input"
+                                type="file"
+                                label="User Audio"
+                                onChange={(e) => this.setState({ audio: e.target.files[0] })}
+                            />
+                            <Button type="submit" content="Save" color="purple" />
+                        </Form>
+                        {/* <Form onSubmit={this.getSong}>
                     <Button type="submit" content="Search" color="blue" />
                 </Form> */}
-                </div>
-                <div className="sidebar">
+                    </div>
+                    <div className="sidebar">
                         <SongList
                             updateSongs={this.updateSongs}
                             songs={this.state.songs}
                             {...this.props}
                         />
+                    </div>
                 </div>
-            </div>
             </>
         )
     }

@@ -66,6 +66,7 @@ class SongButton extends Component {
 
     render() {
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+        const songId = this.props.song.id
         if (this.props.song.userId !== currentUser.id) {
             return <></>
         } else {
@@ -83,6 +84,7 @@ class SongButton extends Component {
                         </Modal.Content>
                         <Button onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
+                    <Button onClick={() => this.props.deleteSong(songId)}>Delete</Button>
                 </>
 
             );

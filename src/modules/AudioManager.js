@@ -16,6 +16,12 @@ export default {
             body: JSON.stringify(song)
         })
     },
+    delete(id) {
+        return fetch(`${url}/${id}`, {
+            method: "DELETE"
+        })
+            .then(result => result.json())
+    },
     update(editedSong) {
         return fetch(`${url}/${editedSong.id}`, {
             method: "PUT",
