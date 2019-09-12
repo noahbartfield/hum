@@ -1,0 +1,11 @@
+.dashboardContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sidebar {
+    flex-basis: 30%;
+    /* visibility: hidden; */
+}
+
