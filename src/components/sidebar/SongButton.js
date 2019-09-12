@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import EditSongModal from "./EditSongModal"
 // import EditModalHelper from './EditModalHelper';
 // import './Song.css'
-import { Button, Modal } from 'semantic-ui-react'
+import { Button, Modal, Icon } from 'semantic-ui-react'
 // import EditModal from './EditModal'
 import AudioManager from '../../modules/AudioManager'
 
@@ -42,8 +42,6 @@ class SongButton extends Component {
             })
         })
         this.close()
-        // .then(() => this.props.history.push("/articles"))
-
     }
 
     closeModal = () => {
@@ -66,9 +64,7 @@ class SongButton extends Component {
     }
 
     openDeleteModal = () => this.setState({ showDeleteModal: true })
-    closeDeleteModal = () => {
-        this.setState({ showDeleteModal: false })
-    }
+    closeDeleteModal = () => this.setState({ showDeleteModal: false })
 
     render() {
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
@@ -78,7 +74,7 @@ class SongButton extends Component {
         } else {
             return (
                 <>
-                    <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button>{this.props.song.title.split('(')[0]}</Button>} closeIcon>
+                    <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button>"{this.props.song.title.split('(')[0]}"</Button>} closeIcon>
                         <Modal.Header>{this.props.song.title.split('(')[0]}</Modal.Header>
                         <Modal.Content>
                             <p>{this.props.song.lyrics}</p>
@@ -90,9 +86,9 @@ class SongButton extends Component {
                         </Modal.Content>
                         <Button onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
-                    <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button>Delete</Button>} closeIcon>
-                        <Modal.Header>Delete {this.props.song.title.split('(')[0]}?</Modal.Header>
-                        <Button onClick={() => this.props.deleteSong(songId)}>Delete</Button>
+                    <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui circular icon button red mini" icon="close"></Button>} closeIcon>
+                        <Modal.Header>Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
+                        <Button onClick={() => this.props.deleteSong(songId)}><Icon name="delete"/></Button>
                     </Modal>
                     
 

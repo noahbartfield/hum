@@ -1,11 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+.title {
+    font-family: 'Montserrat', sans-serif !important;
+    word-spacing: 3em;
+}
+
 .dashboardContainer {
+    height: 90vh;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.navBar {
     display: flex;
     justify-content: space-between;
 }
 
+.showButton {
+    background-color: white !important;
+}
 
 .sidebar {
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     /* visibility: hidden; */
+}
+
+.recordButton {
+    text-align: center;
+}
+
+.blink {
+    background-color: rgb(97, 0, 0) !important;
+    animation-name: blink;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: .5;}
+    100% {opacity: 1;}
 }
 
