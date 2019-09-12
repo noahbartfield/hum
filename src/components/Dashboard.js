@@ -1,5 +1,5 @@
 import React, { Component, createRef } from "react"
-import { Button, Header, Form, Sidebar, Segment, Modal } from 'semantic-ui-react'
+import { Button, Header, Form, Modal } from 'semantic-ui-react'
 import * as firebase from 'firebase/app';
 import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
@@ -21,7 +21,8 @@ class Dashboard extends Component {
         lyrics: "",
         comments: "",
         showModal: false,
-        active: false
+        active: false,
+        noResults: false
     }
 
     componentDidMount() {
@@ -89,7 +90,8 @@ class Dashboard extends Component {
             .then(url => {
                 console.log("upload")
                 this.setState({
-                    audioURL: url
+                    audioURL: url,
+                    noResults: false
                 })
             })
     }
@@ -98,12 +100,18 @@ class Dashboard extends Component {
         this.uploadAudioToFirebase().then(() => {
             console.log(this.state.audio.size)
             if (this.state.audio.size < 13000) {
-                console.log("Sorry, No Results")
+                this.setState({
+                    noResults: true
+                })
             } else {
                 AuddManager.get(this.state.audioURL)
                     .then(foundSong => {
                         console.log(foundSong)
-                        if (foundSong.result !== null) {
+                        if (foundSong.error || foundSong.result === null || foundSong.result.length === 0) {
+                            this.setState({
+                                noResults: true
+                            })
+                        } else if (foundSong.result !== null) {
                             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=fc69fba20d9a402ff3696cbd41daf5d4`).then(data => data.json())
                                 .then(lyrics => {
                                     console.log(lyrics)
@@ -116,7 +124,9 @@ class Dashboard extends Component {
                                     this.toggleModal()
                                 })
                         } else {
-                            console.log("Sorry, No Results")
+                            this.setState({
+                                noResults: true
+                            })
                         }
                     })
             }
@@ -156,7 +166,17 @@ class Dashboard extends Component {
 
     open = () => this.setState({ showModal: true })
 
-    close = () => this.setState({ showModal: false,  active: !this.state.active})
+    close = () => this.setState({
+        showModal: false,
+        active: !this.state.active,
+        audioURL: "",
+        recording: false,
+        mediaRecorder: null,
+        audio: "",
+        title: "",
+        lyrics: "",
+        comments: ""
+    })
 
     toggleModal = () => {
         this.setState({
@@ -192,6 +212,11 @@ class Dashboard extends Component {
                                 </div>
                             </main>
                         </div>
+                        {this.state.noResults &&
+                            <div>
+                                <p>Sorry, No Results</p>
+                            </div>
+                        }
                         {this.state.active &&
                             <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button>View Results</Button>} closeIcon>
                                 <Modal.Header>{this.state.title.split('(')[0]}</Modal.Header>

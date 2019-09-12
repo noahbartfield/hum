@@ -12,7 +12,8 @@ class SongButton extends Component {
 
     state = {
         comments: "",
-        showModal: false
+        showModal: false,
+        showDeleteModal: false
     }
 
     handleFieldChange = evt => {
@@ -64,6 +65,11 @@ class SongButton extends Component {
         this.setState({comments: this.props.song.comments})
     }
 
+    openDeleteModal = () => this.setState({ showDeleteModal: true })
+    closeDeleteModal = () => {
+        this.setState({ showDeleteModal: false })
+    }
+
     render() {
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
         const songId = this.props.song.id
@@ -84,7 +90,12 @@ class SongButton extends Component {
                         </Modal.Content>
                         <Button onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
-                    <Button onClick={() => this.props.deleteSong(songId)}>Delete</Button>
+                    <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button>Delete</Button>} closeIcon>
+                        <Modal.Header>Delete {this.props.song.title.split('(')[0]}?</Modal.Header>
+                        <Button onClick={() => this.props.deleteSong(songId)}>Delete</Button>
+                    </Modal>
+                    
+
                 </>
 
             );
