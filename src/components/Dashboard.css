@@ -3,7 +3,24 @@
 
 .title {
     font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
     word-spacing: 3em;
+    padding-top: 75px !important;
+    padding-bottom: 35px !important;
+}
+.subtitle {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
+    word-spacing: 1em;
+    color: grey !important;
+    /* padding-top: 75px !important; */
+}
+.uploadText {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
+    /* word-spacing: 1em; */
+    color: grey !important;
+    /* padding-top: 75px !important; */
 }
 
 .dashboardContainer {
@@ -14,7 +31,13 @@
 
 .navBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+#logOutContainer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
 }
 
 .showButton {
@@ -28,7 +51,24 @@
 
 .recordButton {
     text-align: center;
+    padding: 50px;
 }
+
+.noResults {
+    text-align: center;
+}
+
+.fileUploadContainer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.viewResultsButton {
+    display: flex;
+    justify-content: center;
+}
+
 
 .blink {
     background-color: rgb(97, 0, 0) !important;

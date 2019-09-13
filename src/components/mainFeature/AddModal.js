@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Button, Header, Form, Modal } from 'semantic-ui-react'
+import '../Dashboard.css'
 
 class AddModal extends Component {
 

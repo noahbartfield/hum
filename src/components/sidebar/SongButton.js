@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import { Button, Modal, Icon } from 'semantic-ui-react'
 // import EditModal from './EditModal'
 import AudioManager from '../../modules/AudioManager'
+import './SongButton.css'
 
 
 
@@ -86,11 +87,10 @@ class SongButton extends Component {
                         </Modal.Content>
                         <Button onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
-                    <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui circular icon button red mini" icon="close"></Button>} closeIcon>
+                    <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button red mini"><Icon name="close"/></Button>} closeIcon>
                         <Modal.Header>Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
-                        <Button onClick={() => this.props.deleteSong(songId)}><Icon name="delete"/></Button>
+                        <Button onClick={() => this.props.deleteSong(songId)}>Delete</Button>
                     </Modal>
-                    
 
                 </>
 

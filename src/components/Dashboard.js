@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Button, Header, Form, Modal, Icon, Sidebar, Menu, } from 'semantic-ui-react'
+import { Button, Header, Form, Modal, Icon, Sidebar, Menu } from 'semantic-ui-react'
 import { Link } from "react-router-dom"
 import * as firebase from 'firebase/app';
 import 'firebase/storage'
@@ -25,7 +25,8 @@ class Dashboard extends Component {
         showModal: false,
         active: false,
         noResults: false,
-        visible: false
+        visible: false,
+        loading: false
     }
 
     componentDidMount() {
@@ -66,6 +67,9 @@ class Dashboard extends Component {
     }
 
     stopRecording = () => {
+        this.setState({
+            loading: true
+        })
         this.getMicrophone().then(stream => {
             this.setState({ recording: false })
             this.state.mediaRecorder.stop()
@@ -105,7 +109,8 @@ class Dashboard extends Component {
             console.log(this.state.audio.size)
             if (this.state.audio.size < 13000) {
                 this.setState({
-                    noResults: true
+                    noResults: true,
+                    loading: false
                 })
             } else {
                 AuddManager.get(this.state.audioURL)
@@ -113,7 +118,8 @@ class Dashboard extends Component {
                         console.log(foundSong)
                         if (foundSong.error || foundSong.result === null || foundSong.result.length === 0) {
                             this.setState({
-                                noResults: true
+                                noResults: true,
+                                loading: false
                             })
                         } else if (foundSong.result !== null) {
                             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=fc69fba20d9a402ff3696cbd41daf5d4`).then(data => data.json())
@@ -124,19 +130,22 @@ class Dashboard extends Component {
                                         this.setState({
                                             title: foundSong.result.list[0].title,
                                             lyrics: lyrics.result[0].lyrics,
+                                            loading: false
                                         })
                                         // this.updateSongs()  
                                         this.toggleModal()
                                     } else {
                                         console.log("NO LYRICS")
                                         this.setState({
-                                            noResults: true
+                                            noResults: true,
+                                            loading: false
                                         })
                                     }
                                 })
                         } else {
                             this.setState({
-                                noResults: true
+                                noResults: true,
+                                loading: false
                             })
                         }
                     })
@@ -209,21 +218,17 @@ class Dashboard extends Component {
     }
 
     render() {
+        const isLoading = this.state.loading
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
         const { visible } = this.state
         return (
             <>
-
                 <div className="dashboardContainer">
                     <nav className="navBar">
-                        <div>
-                            <h3>{currentUser.username}</h3>
-                            <Button onClick={this.signOut}>Sign Out</Button>
-                        </div>
-                        <Button className="showButton" onClick={this.handleClick}>
-                            <Icon name={this.state.visible 
-                                ? "delete" 
-                                : "bars"}/>
+                        <Button className="showButton ui massive" onClick={this.handleClick}>
+                            <Icon name={this.state.visible
+                                ? "delete"
+                                : "bars"} />
                         </Button>
                     </nav>
                     <Sidebar.Pushable >
@@ -231,18 +236,21 @@ class Dashboard extends Component {
                             as={Menu}
                             animation='overlay'
                             icon='labeled'
-                            // inverted
                             vertical
                             direction='right'
                             visible={visible}
-                            // width='thin'
+                            width='wide'
                         >
+                            <div id="logOutContainer">
+                             
+                                {/* <h3>saved songs</h3> */}
+                                <Button onClick={this.signOut}>sign out as {currentUser.username}</Button>
+                            </div>
                             <SongList
                                 updateSongs={this.updateSongs}
                                 songs={this.state.songs}
                                 {...this.props}
                             />
-
                         </Sidebar>
                         <Sidebar.Pusher>
                             <div>
@@ -250,27 +258,43 @@ class Dashboard extends Component {
 
                                 </div>
                                 <Header className="title" as='h1' textAlign='center'>h u m</Header>
+                                <Header className="subtitle" as='h4' textAlign='center'>sing a song</Header>
+                                {/* <Header className="subtitle" as='h6' textAlign='center'>a song</Header> */}
                                 <div className="App">
                                     <main>
                                         <div className="controls">
 
                                             <div className="recordButton">
-                                                <Button onClick={this.toggleMicrophone} className=
+                                                {isLoading 
+                                                ? <Button
+                                                    loading
+                                                    disabled
+                                                    onClick={this.toggleMicrophone}
+                                                    className="ui circular icon button red massive">
+                                                        Loading
+                                                    </Button>
+                                                : <Button
+                                                    onClick={this.toggleMicrophone}
+                                                    className=
                                                     {this.state.recording
                                                         ? "blink ui circular icon button red massive"
-                                                        : "ui circular icon button red massive"}>
-                                                    <Icon name={this.state.recording ? 'stop' : 'play'} />
+                                                        : "ui circular icon button red massive"}>    
+                                                    {this.state.recording
+                                                        ? <Icon name='stop' />
+                                                        : <Icon name='microphone' />}
                                                 </Button>
+                                            }
                                             </div>
                                         </div>
                                     </main>
                                 </div>
                                 {this.state.noResults &&
-                                    <div>
+                                    <div className="noResults">
                                         <p>Sorry, No Results</p>
                                     </div>
                                 }
                                 {this.state.active &&
+                                <div className="viewResultsButton">
                                     <AddModal
                                         {...this.props}
                                         title={this.state.title}
@@ -281,15 +305,17 @@ class Dashboard extends Component {
                                         close={this.close}
                                         open={this.open}
                                     />
+                                </div>
                                 }
-                                <Form onSubmit={this.getSong}>
+                                <Form className="fileUploadContainer" onSubmit={this.getSong}>
+                                    <h5 className="uploadText">or upload audio</h5>
                                     <Form.Field
+                                        className="fileUploadField"
                                         control="input"
                                         type="file"
-                                        label="User Audio"
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
-                                    <Button type="submit" content="Save" color="purple" />
+                                    <Button className="ui button small"type="submit" content="upload" color="blue" />
                                 </Form>
                             </div>
                         </Sidebar.Pusher>
@@ -302,21 +328,3 @@ class Dashboard extends Component {
 }
 
 export default Dashboard
-
-
-
-
-            // Turned this modal into AddModal. Keeping just in case I fucked it up
-
-//     < Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={< Button > View Results</Button >} closeIcon >
-//         <Modal.Header>{this.state.title.split('(')[0]}</Modal.Header>
-//         <Modal.Content>
-//             <p>{this.state.lyrics}</p>
-//         </Modal.Content>
-//         <Modal.Content>
-//             <h3>Comments</h3>
-//             <label htmlFor="comments"></label>
-//             <textarea rows="4" cols="30" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
-//         </Modal.Content>
-//         <Button onClick={this.addSong}>Save</Button>
-//     </Modal >
