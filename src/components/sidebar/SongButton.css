@@ -2,4 +2,21 @@
     margin-bottom: 20px !important;
     width: 40px !important;
     justify-content: center;
+    background-color: rgb(207, 207, 207) !important;
+    transition: 0.4s !important;
+}
+
+.deleteButton:hover {
+    color: rgb(122, 3, 3) !important;
+    transition: 0.4s !important;
+}
+
+.trackButton {
+    background-color: white !important;
+    transition: 0.4s !important;
+}
+
+.trackButton:hover {
+    color: rgb(122, 3, 3) !important;
+    transition: 0.4s !important;
 }

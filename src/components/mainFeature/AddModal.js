@@ -16,7 +16,7 @@ class AddModal extends Component {
                     <label htmlFor="comments"></label>
                     <textarea rows="4" cols="30" id="comments" onChange={this.props.handleFieldChange} value={this.props.comments}></textarea>
                 </Modal.Content>
-                <Button onClick={this.props.addSong}>Save</Button>
+                <Button attached onClick={this.props.addSong}>Save</Button>
             </Modal>
         )
     }

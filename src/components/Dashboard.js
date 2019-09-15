@@ -8,7 +8,8 @@ import AuddManager from "../modules/AuddManager";
 import SongList from "./sidebar/SongList"
 import './Dashboard.css'
 import AddModal from "./mainFeature/AddModal"
-
+import { whileStatement } from "@babel/types";
+// import AudioAnalyser from "./mainFeature/AudioAnalyser"
 
 
 class Dashboard extends Component {
@@ -105,6 +106,9 @@ class Dashboard extends Component {
     }
 
     getSong = () => {
+        this.setState({
+            loading: true
+        })
         this.uploadAudioToFirebase().then(() => {
             console.log(this.state.audio.size)
             if (this.state.audio.size < 13000) {
@@ -221,6 +225,7 @@ class Dashboard extends Component {
         const isLoading = this.state.loading
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
         const { visible } = this.state
+
         return (
             <>
                 <div className="dashboardContainer">
@@ -239,12 +244,12 @@ class Dashboard extends Component {
                             vertical
                             direction='right'
                             visible={visible}
-                            width='wide'
+                            // width='medium'
                         >
                             <div id="logOutContainer">
                              
                                 {/* <h3>saved songs</h3> */}
-                                <Button onClick={this.signOut}>sign out as {currentUser.username}</Button>
+                                <Button id="logOutButton"onClick={this.signOut}>sign out as {currentUser.username}</Button>
                             </div>
                             <SongList
                                 updateSongs={this.updateSongs}
@@ -254,9 +259,7 @@ class Dashboard extends Component {
                         </Sidebar>
                         <Sidebar.Pusher>
                             <div>
-                                <div className="dashboard">
 
-                                </div>
                                 <Header className="title" as='h1' textAlign='center'>h u m</Header>
                                 <Header className="subtitle" as='h4' textAlign='center'>sing a song</Header>
                                 {/* <Header className="subtitle" as='h6' textAlign='center'>a song</Header> */}
@@ -308,14 +311,15 @@ class Dashboard extends Component {
                                 </div>
                                 }
                                 <Form className="fileUploadContainer" onSubmit={this.getSong}>
-                                    <h5 className="uploadText">or upload audio</h5>
+                                    <h5 className="uploadText">or upload</h5>
                                     <Form.Field
                                         className="fileUploadField"
                                         control="input"
                                         type="file"
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
-                                    <Button className="ui button small"type="submit" content="upload" color="blue" />
+                                    {!isLoading && <Button className="ui button small"type="submit" content="upload" color="blue" />}
+                                    
                                 </Form>
                             </div>
                         </Sidebar.Pusher>

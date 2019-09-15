@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+body {
+    background-color: rgb(252, 245, 238);
+    /* color: rgb(56, 50, 47); */
+}
 
 .title {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 100 !important;
     word-spacing: 3em;
-    padding-top: 75px !important;
+    padding-top: 105px !important;
     padding-bottom: 35px !important;
 }
 .subtitle {
@@ -37,14 +41,19 @@
 #logOutContainer {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 245, 241);
+}
+
+#logOutButton {
+    background-color: rgb(250, 245, 241);
 }
 
 .showButton {
-    background-color: white !important;
+    background-color: rgb(252, 245, 238) !important;
 }
 
 .sidebar {
+    background-color: rgb(250, 245, 241) !important;
     /* flex-basis: 30%; */
     /* visibility: hidden; */
 }

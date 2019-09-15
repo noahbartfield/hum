@@ -75,7 +75,7 @@ class SongButton extends Component {
         } else {
             return (
                 <>
-                    <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button>"{this.props.song.title.split('(')[0]}"</Button>} closeIcon>
+                    <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button className="trackButton">"{this.props.song.title.split('(')[0]}"</Button>} closeIcon>
                         <Modal.Header>{this.props.song.title.split('(')[0]}</Modal.Header>
                         <Modal.Content>
                             <p>{this.props.song.lyrics}</p>
@@ -85,7 +85,7 @@ class SongButton extends Component {
                             <label htmlFor="comments"></label>
                             <textarea rows="4" cols="30" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
                         </Modal.Content>
-                        <Button onClick={this.updateExistingSong}>Save</Button>
+                        <Button attached onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
                     <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button red mini"><Icon name="close"/></Button>} closeIcon>
                         <Modal.Header>Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
