@@ -1,5 +1,8 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom"
 import UserManager from "../../modules/UserManager"
+import { Button, Input } from 'semantic-ui-react'
+import './auth.css'
 
 class Register extends Component {
 
@@ -50,33 +53,41 @@ class Register extends Component {
     render() {
         return (
             <div className="login_container">
+                <div className="titleContainer">
+                    <h1 className="title">h u m</h1>
+                </div>
+                {/* <div className="titleContainer">
+                    <h4 className="subtitle">sing a song</h4>
+                </div> */}
                 <form onSubmit={this.handleRegister}>
-                <h2 className="welcome">hum</h2>
-                <fieldset>
-                    <h3>Register</h3>
-                    <div className="formgrid">
-                        <label htmlFor="inputUsername"></label>
-                        <input onChange={this.handleFieldChange} type="username"
-                            id="username"
-                            placeholder="Enter username"
-                            required="" autoFocus="" />
-                        <label htmlFor="inputPassword"></label>
-                        <input onChange={this.handleFieldChange} type="password"
-                            id="password"
-                            placeholder="Password"
-                            required="" />
-                    </div>
-                    <button color="dark" size="sm" type="submit">
-                        Submit
-            </button>
-            <button color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
-                        Cancel
-            </button>
-                </fieldset>
-            </form>
-            </div>
+                <div className="formField">
+                        <h3 className="subtitle">Register</h3>
+                        </div>
+                        <div className="formField">
+                            <label htmlFor="inputUsername"></label>
+                            <Input onChange={this.handleFieldChange} type="username"
+                                id="username"
+                                placeholder="username"
+                                required="" autoFocus="" />
+                            <label htmlFor="inputPassword"></label>
+                            <Input onChange={this.handleFieldChange} type="password"
+                                id="password"
+                                placeholder="password"
+                                required="" />
+                        </div>
+                        <div className="submitOrRegister">
+                        <Button className="ui red circular button" type="submit">
+                            Submit
+                        </Button>
+                        </div>
+                        <div  className="submitOrRegister">
+                        <br></br>
+                        <Link onClick={this.handleCancel} className="nav-link_login" to="/register">Back to Login</Link>
+                        </div>
+                </form></div>
         )
     }
+
 
 }
 

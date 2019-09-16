@@ -1,0 +1,32 @@
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
+    word-spacing: 3em;
+    padding-top: 75px !important;
+    padding-bottom: 35px !important;
+}
+.subtitle {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
+    word-spacing: 1em;
+    color: grey !important;
+    /* padding-top: 75px !important; */
+}
+
+.formField {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.submitOrRegister {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}

@@ -9,19 +9,28 @@
     {
       "username": "elliot",
       "password": "e",
-      "themeId": 1,
+      "themeId": 2,
       "id": 2
+    },
+    {
+      "username": "kim",
+      "password": "k",
+      "themeId": 2,
+      "id": 3
+    },
+    {
+      "username": "bobby",
+      "password": "b",
+      "themeId": 1,
+      "id": 4
+    },
+    {
+      "username": "ted",
+      "password": "t",
+      "id": 5
     }
   ],
   "songs": [
-    {
-      "id": 3,
-      "title": "We Will Rock You",
-      "lyrics": "[Verse 1]\r\n Buddy, you’re a boy, make a big noise\r\n Playing in the street, gonna be a big man someday\r\n You got mud on your face, you big disgrace\r\n Kicking your can all over the place (singing)\r\n \r\n [Chorus]\r\n We will, we will rock you\r\n We will, we will rock you\r\n \r\n [Verse 2]\r\n Buddy, you’re a young man, hard man\r\n Shouting in the street, gonna take on the world someday\r\n You got blood on your face, you big disgrace\r\n Waving your banner all over the place\r\n \r\n [Chorus]\r\n We will, we will rock you (sing it out)\r\n We will, we will rock you\r\n \r\n [Verse 3]\r\n Buddy, you’re an old man, poor man\r\n Pleading with your eyes, gonna make you some peace someday\r\n You got mud on your face, big disgrace\r\n Somebody better put you back into your place\r\n \r\n [Chorus]\r\n We will, we will rock you (sing it)\r\n We will, we will rock you (everybody)\r\n We will, we will rock you\r\n We will, we will rock you\r\n \r\n Alright",
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568045920297?alt=media&token=9abcbc35-830f-48db-8b38-782154ab6f2c",
-      "userId": 1,
-      "comments": "Queen"
-    },
     {
       "id": 6,
       "title": "Girl",
@@ -37,6 +46,86 @@
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568240405689?alt=media&token=37c24cd0-84b9-44a5-b241-883a9c8d3e88",
       "userId": 2,
       "comments": "Great Song"
+    },
+    {
+      "title": "Yellow Submarine (Documentary)",
+      "lyrics": "[Verse 1]\r\n In the town where I was born\r\n Lived a man who sailed to sea\r\n And he told us of his life\r\n In the land of submarines\r\n \r\n [Verse 2]\r\n So we sailed up to the sun\r\n Till we found the sea of green\r\n And we lived beneath the waves\r\n In our yellow submarine\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Verse 3]\r\n And our friends are all aboard\r\n Many more of them live next door\r\n And the band begins to play\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Bridge]\r\n Full speed ahead, Mr. Parker, full speed ahead\r\n Full speed over here, sir\r\n Action station, action station\r\n Aye, aye, sir, fire\r\n Heaven, heaven\r\n \r\n [Verse 4]\r\n As we live a life of ease\r\n Everyone of us has all we need  (has all we need)\r\n Sky of blue (sky of blue) and sea of green (and sea of green)\r\n In our (In our) yellow submarine (yellow submarine, ha-ha!)\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568408166581?alt=media&token=b3031fcd-820d-4610-a9ad-22f04be39aab",
+      "comments": "",
+      "id": 11
+    },
+    {
+      "title": "Happy Birthday",
+      "lyrics": "[Verse]\nHappy Birthday to you\nHappy Birthday to you\nHappy Birthday to Jane\nHappy Birthday to you",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568408941325?alt=media&token=588b881d-ced4-4d1e-98fc-6ebaa3d3f05c",
+      "comments": "finally a win",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "title": "Girl",
+      "lyrics": "[Verse 1]\r\n Is there anybody going to listen to my story\r\n All about the girl who came to stay?\r\n She's the kind of girl you want so much\r\n It makes you sorry\r\n Still, you don't regret a single day\r\n Ah girl\r\n Girl, girl\r\n \r\n [Verse 2]\r\n When I think of all the times I've tried so hard to leave her\r\n She will turn to me and start to cry\r\n And she promises the earth to me\r\n And I believe her\r\n After all this times I don't know why\r\n Ah, girl\r\n Girl, girl\r\n \r\n [Verse 3]\r\n She's the kind of girl who puts you down\r\n When friends are there, you feel a fool\r\n When you say she's looking good\r\n She acts as if it's understood\r\n She's cool, cool, cool, cool\r\n Girl\r\n Girl, girl\r\n \r\n [Verse 4]\r\n Was she told when she was young that pain\r\n Would lead to pleasure?\r\n Did she understand it when they said\r\n That a man must break his back to earn\r\n His day of leisure?\r\n Will she still believe it when he's dead?\r\n Ah girl\r\n Girl, girl\r\n \r\n [Outro]\r\n Ah girl\r\n Girl, girl",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568415458523?alt=media&token=fe4ec58d-c8f4-4658-82b4-33ca5263642d",
+      "userId": 3,
+      "comments": ""
+    },
+    {
+      "title": "Hey Jude",
+      "lyrics": "[Verse 1]\r\n Hey Jude, don't make it bad\r\n Take a sad song and make it better\r\n Remember to let her into your heart\r\n Then you can start to make it better\r\n \r\n [Verse 2]\r\n Hey Jude, don't be afraid\r\n You were made to go out and get her\r\n The minute you let her under your skin\r\n Then you begin to make it better\r\n \r\n [Verse 3]\r\n And anytime you feel the pain, hey Jude, refrain\r\n Don't carry the world upon your shoulders\r\n For well you know that it's a fool who plays it cool\r\n By making his world a little colder\r\n \r\n [Verse 4]\r\n Hey Jude, don't let me down\r\n You have found her, now go and get her\r\n (Let it out and let it in, Hey Jude)\r\n Remember to let her into your heart\r\n Then you can start to make it better\r\n \r\n [Verse 5]\r\n So let it out and let it in, hey Jude, begin\r\n You're waiting for someone to perform with\r\n And don't you know that it's just you, hey Jude, you'll do\r\n The movement you need is on your shoulder\r\n \r\n [Verse 6]\r\n Hey Jude, don't make it bad\r\n Take a sad song and make it better\r\n Remember to let her under your skin\r\n Then you'll begin to make it\r\n Better better better better better better, oh\r\n \r\n [Outro]\r\n Na na na na na, na na na, hey Jude\r\n Na na na na na, na na na, hey Jude...",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568469721680?alt=media&token=928fa3a1-da4a-4422-a77c-b52abf5bff45",
+      "comments": "",
+      "id": 15
+    },
+    {
+      "title": "She Always a Woman (Album Version)",
+      "lyrics": "She can kill with a smile, she can wound with her eyes\r\n She can ruin your faith with her casual lies\r\n And she only reveals what she wants you to see\r\n She hides like a child but she's always a woman to me\r\n \r\n She can lead you to love, she can take you or leave you\r\n She can ask for the truth but she'll never believe you\r\n And she'll take what you give her as long as it's free\r\n Yeah she steals like a thief but she's always a woman to me\r\n \r\n [Bridge]\r\n Oh, she takes care of herself, she can wait if she wants\r\n She's ahead of her time\r\n Oh, and she never gives out and she never gives in\r\n She just changes her mind\r\n \r\n And she'll promise you more than the Garden of Eden\r\n Then she'll carelessly cut you and laugh while you're bleeding\r\n But she brings out the best and the worst you can be\r\n Blame it all on yourself cause she's always a woman to me\r\n \r\n [Bridge]\r\n \r\n She is frequently kind and she's suddenly cruel\r\n She can do as she pleases, she's nobody's fool\r\n But she can't be convicted, she's earned her degree\r\n And the most she will do is throw shadows at you\r\n But she's always a woman to me",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568469860570?alt=media&token=34cba064-7383-4fb8-9b5e-1b7a08b344f7",
+      "comments": "",
+      "id": 16
+    },
+    {
+      "title": "Bridge over Troubled Water",
+      "lyrics": "[Verse 1]\r\n Hello darkness, my old friend\r\n I've come to talk with you again\r\n Because a vision softly creeping\r\n Left its seeds while I was sleeping\r\n And the vision that was planted in my brain\r\n Still remains\r\n Within the sound of silence\r\n \r\n [Verse 2]\r\n In restless dreams I walked alone\r\n Narrow streets of cobblestone\r\n 'Neath the halo of a street lamp\r\n I turned my collar to the cold and damp\r\n When my eyes were stabbed by\r\n The flash of a neon light\r\n That split the night\r\n And touched the sound of silence\r\n \r\n [Verse 3]\r\n And in the naked light I saw\r\n Ten thousand people, maybe more\r\n People talking without speaking\r\n People hearing without listening\r\n People writing songs that voices never share\r\n And no one dared\r\n Disturb the sound of silence\r\n \r\n [Verse 4]\r\n \"Fools\", said I, \"You do not know\r\n Silence like a cancer grows\r\n Hear my words that I might teach you\r\n Take my arms that I might reach you\"\r\n But my words, like silent raindrops fell\r\n And echoed in the wells of silence\r\n \r\n [Verse 5]\r\n And the people bowed and prayed\r\n To the neon god they made\r\n And the sign flashed out its warning\r\n In the words that it was forming\r\n And the sign said:\r\n \"The words of the prophets are\r\n Written on the subway walls\r\n And tenement halls\r\n And whispered in the sound of silence.\"",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568470206873?alt=media&token=b3b493df-6d8b-43f7-aeba-84e41ff7e4d7",
+      "comments": "",
+      "id": 17
+    },
+    {
+      "title": "Kiss Me",
+      "lyrics": "[Verse 1]\r\n Kiss me, out of the bearded barley\r\n Nightly, beside the green, green grass\r\n Swing, swing, swing the spinning step\r\n You wear those shoes and I will wear that dress\r\n \r\n [Chorus]\r\n Oh, kiss me, beneath the milky twilight\r\n Lead me out on the moonlit floor\r\n Lift your open hand\r\n Strike up the band and make the fireflies dance\r\n Silver moon's sparkling\r\n So kiss me\r\n \r\n [Verse 2]\r\n Kiss me, down by the broken tree house\r\n Swing me upon its hanging tire\r\n Bring, bring, bring your flowered hat\r\n We'll take the trail marked on your father's map\r\n \r\n [Chorus]\r\n Oh, kiss me, beneath the milky twilight\r\n Lead me out on the moonlit floor\r\n Lift your open hand\r\n Strike up the band and make the fireflies dance\r\n Silver moon's sparkling\r\n So kiss me\r\n Kiss me, beneath the milky twilight\r\n Lead me out on the moonlit floor\r\n Lift your open hand\r\n Strike up the band and make the fireflies dance\r\n Silver moon's sparkling\r\n So kiss me\r\n \r\n [Outro]\r\n So kiss me\r\n So kiss me\r\n So kiss me",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568470348561?alt=media&token=754134ef-d249-4802-aac6-5226361245c7",
+      "comments": "",
+      "id": 19
+    },
+    {
+      "title": "Oh, Darling",
+      "lyrics": "[Chorus 1]\r\n Oh! Darling, please believe me\r\n I'll never do you no harm\r\n Believe me when I tell you\r\n I'll never do you no harm\r\n \r\n [Chorus 2]\r\n Oh! Darling, if you leave me\r\n I'll never make it alone\r\n Believe me when I beg you\r\n Don't ever leave me alone\r\n \r\n [Chorus 3]\r\n When you told me you didn't need me anymore\r\n Well you know I nearly broke down and cried\r\n When you told me you didn't need me anymore\r\n Well you know I nearly fell down and died\r\n \r\n [Chorus 2]\r\n Oh! Darling, if you leave me\r\n I'll never make it alone\r\n Believe me when I tell you\r\n I'll never do you no harm, believe me darling\r\n \r\n [Chorus 3]\r\n When you told me you didn't need me anymore\r\n Well you know I nearly broke down and cried\r\n When you told me you didn't need me anymore\r\n Well you know I nearly fell down and died\r\n \r\n [Chorus 1]\r\n Oh! Darling, please believe me\r\n I'll never let you down, believe me darling\r\n Believe me when I tell you\r\n I'll never do you no harm",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568492343612?alt=media&token=cb3a6635-1a7f-4db3-ad4a-6f35f02a4ced",
+      "comments": "",
+      "id": 20
+    },
+    {
+      "id": 21,
+      "title": "When She Loved Me",
+      "lyrics": "[Chorus]\r\n When somebody loved me, everything was beautiful\r\n Every hour we spent together lives within my heart\r\n \r\n [Post-Chorus]\r\n And when she was sad, I was there to dry her tears\r\n And when she was happy, so was I\r\n When she loved me\r\n \r\n [Verse 1]\r\n Through the summer and the fall\r\n We had each other, that was all\r\n Just she and I together, like it was meant to be\r\n And when she was lonely, I was there to comfort her\r\n And I knew that she loved me\r\n \r\n [Verse 2]\r\n So the years went by, I stayed the same\r\n And she began to drift away, I was left alone\r\n Still I waited for the day\r\n When she’d say\r\n \"I will always love you.\"\r\n \r\n [Verse 3]\r\n Lonely and forgotten, never thought she’d look my way\r\n She smiled at me and held me, just like she used to do\r\n Like she loved me, when she loved me\r\n \r\n [Chorus]\r\n When somebody loved me, everything was beautiful\r\n Every hour we spent together lives within my heart\r\n \r\n [Outro]\r\n When she loved me",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568499323426?alt=media&token=382f0bfc-d624-439a-a4d6-31ff9d768c39",
+      "userId": 1,
+      "comments": "Toy Story 2 - Randy Newman"
+    },
+    {
+      "id": 22,
+      "title": "I'll Never Fall In Love Again",
+      "lyrics": "What do you get when you fall in love?\r\n A guy with a pin to burst your bubble\r\n That's what you get for all your trouble\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you kiss a guy?\r\n You get enough germs to catch pneumonia\r\n After you do, he'll never phone you\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n Don't tell me what is all about\r\n 'Cause I've been there and I'm glad I'm out\r\n Out of those chains, those chains that bind you\r\n That is why I'm here to remind you\r\n \r\n What do you get when you fall in love?\r\n You get enough tears to fill an ocean\r\n That's what you get for your devotion\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you fall in love?\r\n You only get lies and pain and sorrow\r\n So, for at least until tomorrow\r\n I'll never fall in love again!\r\n I'll never fall in love again!",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568517860178?alt=media&token=987e0889-57cf-4960-acd7-231084e223f0",
+      "userId": 1,
+      "comments": "Burt"
     }
   ],
   "themes": [

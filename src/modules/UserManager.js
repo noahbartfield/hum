@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:5002"
+const remoteURL = "http://localhost:8088"
 
 export default {
     get(id) {
