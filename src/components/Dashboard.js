@@ -8,7 +8,6 @@ import AuddManager from "../modules/AuddManager";
 import SongList from "./sidebar/SongList"
 import './Dashboard.css'
 import AddModal from "./mainFeature/AddModal"
-import { whileStatement } from "@babel/types";
 // import AudioAnalyser from "./mainFeature/AudioAnalyser"
 
 
@@ -30,6 +29,11 @@ class Dashboard extends Component {
         loading: false
     }
 
+    signOut = () => {
+        sessionStorage.clear()
+        this.props.history.push("/login")
+    }
+
     componentDidMount() {
         this.updateSongs()
     }
@@ -39,6 +43,10 @@ class Dashboard extends Component {
             this.setState({ songs: songs })
         })
     }
+
+    
+
+    // record button /////////////////////////////
 
     async getMicrophone() {
         return await navigator.mediaDevices.getUserMedia({
@@ -91,6 +99,9 @@ class Dashboard extends Component {
     }
 
 
+
+    // Interacting with Firebase and API ///////////////////////
+
     uploadAudioToFirebase = () => {
         const audioBlobsRef = firebase.storage().ref('audioBlobs');
         const childRef = audioBlobsRef.child(`${Date.now()}`)
@@ -136,7 +147,6 @@ class Dashboard extends Component {
                                             lyrics: lyrics.result[0].lyrics,
                                             loading: false
                                         })
-                                        // this.updateSongs()  
                                         this.toggleModal()
                                     } else {
                                         console.log("NO LYRICS")
@@ -156,6 +166,10 @@ class Dashboard extends Component {
             }
         })
     };
+
+
+
+    // Modal Functions //////////////////////////
 
     addSong = () => {
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
@@ -208,11 +222,6 @@ class Dashboard extends Component {
         })
     }
 
-    signOut = () => {
-        sessionStorage.clear()
-        this.props.history.push("/login")
-    }
-
     handleClick = () => {
         if (this.state.visible === false) {
             this.setState({ visible: true })
@@ -225,7 +234,6 @@ class Dashboard extends Component {
         const isLoading = this.state.loading
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
         const { visible } = this.state
-
         return (
             <>
                 <div className="dashboardContainer">
@@ -247,8 +255,6 @@ class Dashboard extends Component {
                             // width='medium'
                         >
                             <div id="logOutContainer">
-                             
-                                {/* <h3>saved songs</h3> */}
                                 <Button id="logOutButton"onClick={this.signOut}>sign out as {currentUser.username}</Button>
                             </div>
                             <SongList
@@ -259,10 +265,8 @@ class Dashboard extends Component {
                         </Sidebar>
                         <Sidebar.Pusher>
                             <div>
-
                                 <Header className="title" as='h1' textAlign='center'>h u m</Header>
                                 <Header className="subtitle" as='h4' textAlign='center'>sing a song</Header>
-                                {/* <Header className="subtitle" as='h6' textAlign='center'>a song</Header> */}
                                 <div className="App">
                                     <main>
                                         <div className="controls">
@@ -319,13 +323,11 @@ class Dashboard extends Component {
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
                                     {!isLoading && <Button className="ui button small"type="submit" content="upload" color="blue" />}
-                                    
                                 </Form>
                             </div>
                         </Sidebar.Pusher>
                     </Sidebar.Pushable>
                 </div>
-
             </>
         )
     }
