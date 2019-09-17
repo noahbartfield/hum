@@ -1,14 +1,14 @@
 import React, { Component } from "react"
-import { Button, Header, Form, Modal, Icon, Sidebar, Menu } from 'semantic-ui-react'
-import { Link } from "react-router-dom"
+import { Button, Header, Form, Icon, Sidebar, Menu } from 'semantic-ui-react'
+// import { Link } from "react-router-dom"
 import * as firebase from 'firebase/app';
 import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
 import AuddManager from "../modules/AuddManager";
+import auddToken from "../apiToken"
 import SongList from "./sidebar/SongList"
 import './Dashboard.css'
 import AddModal from "./mainFeature/AddModal"
-// import AudioAnalyser from "./mainFeature/AudioAnalyser"
 
 
 class Dashboard extends Component {
@@ -85,7 +85,7 @@ class Dashboard extends Component {
             let chunks = [];
             this.state.mediaRecorder.onstop = e => {
                 const blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
-                const audioURL = window.URL.createObjectURL(blob);
+                // const audioURL = window.URL.createObjectURL(blob);
                 console.log(blob)
                 this.setState({
                     audio: blob
@@ -125,7 +125,8 @@ class Dashboard extends Component {
             if (this.state.audio.size < 13000) {
                 this.setState({
                     noResults: true,
-                    loading: false
+                    loading: false,
+                    audio: ""
                 })
             } else {
                 AuddManager.get(this.state.audioURL)
@@ -134,10 +135,12 @@ class Dashboard extends Component {
                         if (foundSong.error || foundSong.result === null || foundSong.result.length === 0) {
                             this.setState({
                                 noResults: true,
-                                loading: false
+                                loading: false,
+                                audio: ""
                             })
                         } else if (foundSong.result !== null) {
-                            fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=fc69fba20d9a402ff3696cbd41daf5d4`).then(data => data.json())
+                            // AuddManager.getLyrics(foundSong.result.list[0].artist, foundSong.result.list[0].title.split('(')[0])
+                            fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=${auddToken}`).then(data => data.json())
                                 .then(lyrics => {
                                     if (lyrics.result.length !== 0) {
                                         console.log(lyrics)
@@ -145,21 +148,24 @@ class Dashboard extends Component {
                                         this.setState({
                                             title: foundSong.result.list[0].title,
                                             lyrics: lyrics.result[0].lyrics,
-                                            loading: false
+                                            loading: false,
+                                            audio: ""
                                         })
                                         this.toggleModal()
                                     } else {
                                         console.log("NO LYRICS")
                                         this.setState({
                                             noResults: true,
-                                            loading: false
+                                            loading: false,
+                                            audio: ""
                                         })
                                     }
                                 })
                         } else {
                             this.setState({
                                 noResults: true,
-                                loading: false
+                                loading: false,
+                                audio: ""
                             })
                         }
                     })
@@ -322,7 +328,7 @@ class Dashboard extends Component {
                                         type="file"
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
-                                    {!isLoading && <Button className="ui button small"type="submit" content="upload" color="blue" />}
+                                    {(!isLoading && this.state.audio !== "") && <Button className="ui button small"type="submit" content="upload" color="blue" />}
                                 </Form>
                             </div>
                         </Sidebar.Pusher>
