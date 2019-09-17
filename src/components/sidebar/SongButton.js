@@ -39,7 +39,7 @@ class SongButton extends Component {
         AudioManager.update(editedSong).then(() => {
             this.setState({ showModal: false })
             this.props.updateSongs().then(() => {
-                this.setState({comments: this.props.song.comments})
+                this.setState({ comments: this.props.song.comments })
             })
         })
         this.close()
@@ -61,7 +61,7 @@ class SongButton extends Component {
     open = () => this.setState({ showModal: true })
     close = () => {
         this.setState({ showModal: false })
-        this.setState({comments: this.props.song.comments})
+        this.setState({ comments: this.props.song.comments })
     }
 
     openDeleteModal = () => this.setState({ showDeleteModal: true })
@@ -76,20 +76,27 @@ class SongButton extends Component {
             return (
                 <>
                     <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button className="trackButton">"{this.props.song.title.split('(')[0]}"</Button>} closeIcon>
-                        <Modal.Header>{this.props.song.title.split('(')[0]}</Modal.Header>
-                        <Modal.Content>
-                            <p>{this.props.song.lyrics}</p>
-                        </Modal.Content>
-                        <Modal.Content>
-                            <h3>Comments</h3>
-                            <label htmlFor="comments"></label>
-                            <textarea rows="4" cols="30" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
-                        </Modal.Content>
-                        <Button attached onClick={this.updateExistingSong}>Save</Button>
+                        <Modal.Header className="modalHeader">{this.props.song.title.split('(')[0]}</Modal.Header>
+                        <div className="lyricsAndComments">
+                            <Modal.Content className="lyricsInModal">
+                                {this.props.song.lyrics !== "" &&
+                                    this.props.song.lyrics.split(/(?=[A-H]|[J-Z])/).map(lyric => {
+                                        return <p key={Math.random() * 9999999999999}>{lyric.replace("[", "").replace("]", "").replace("Verse", "").replace("Chorus", "").replace("Bridge", "").replace("Outro", "").replace(/[1-9]/, "")}</p>
+                                    })
+                                }
+                                {/* <p>{this.props.song.lyrics}</p> */}
+                            </Modal.Content>
+                            <Modal.Content>
+                                <h3>Comments</h3>
+                                <label htmlFor="comments"></label>
+                                <textarea rows="20" cols="20" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
+                            </Modal.Content>
+                        </div>
+                        <Button color="blue" attached onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
-                    <Modal onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button red mini"><Icon name="close"/></Button>} closeIcon>
+                    <Modal className="mini" onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button red mini"><Icon name="close" /></Button>} closeIcon>
                         <Modal.Header>Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
-                        <Button onClick={() => this.props.deleteSong(songId)}>Delete</Button>
+                        <Button attached onClick={() => this.props.deleteSong(songId)}>Delete</Button>
                     </Modal>
 
                 </>

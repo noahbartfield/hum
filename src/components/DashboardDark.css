@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 body {
-    background-color: rgb(252, 245, 238);
+    background-color: rgb(78, 74, 70);
     /* color: rgb(56, 50, 47); */
 }
 
@@ -13,6 +11,7 @@ body {
     word-spacing: 3em;
     padding-top: 105px !important;
     padding-bottom: 35px !important;
+    color: rgb(245, 245, 245) !important;
 }
 .subtitle {
     font-family: 'Montserrat', sans-serif !important;
@@ -42,21 +41,20 @@ body {
 
 #logOutContainer {
     display: flex;
-    justify-content: flex-end;
-    background-color: rgb(250, 245, 241);
+    justify-content: space-between;
+    background-color: rgb(78, 74, 70);
 }
 
 #logOutButton {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(250, 245, 241);
+    background-color: rgb(78, 74, 70);
 }
 
 .showButton {
-    background-color: rgb(252, 245, 238) !important;
+    background-color: rgb(78, 74, 70) !important;
 }
 
 .sidebar {
-    background-color: rgb(250, 245, 241) !important;
+    background-color: rgb(78, 74, 70) !important;
     /* flex-basis: 30%; */
     /* visibility: hidden; */
 }
@@ -67,23 +65,19 @@ body {
 }
 
 .noResults {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 .fileUploadContainer {
-    font-family: 'Roboto', sans-serif;
     margin-top: 200px;
     display: flex;
     justify-content: center;
 }
 
 .viewResultsButton {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
 }
-
 
 
 .blink {
@@ -94,26 +88,8 @@ body {
 	animation-iteration-count: infinite;
 }
 
-.modalHeader {
-    background-color: rgb(255, 251, 247) !important;
-}
-
-.lyricsAndComments {
-    font-family: 'Roboto', sans-serif !important;
-    display: flex;
-    justify-content: space-around;
-}
-
-.lyricsInModal {
-    font-family: 'Roboto', sans-serif;
-    width: 600px;
-    height: 400px;
-    overflow: scroll;
-}
-
 @keyframes blink {
     0% {opacity: 1;}
     50% {opacity: .5;}
     100% {opacity: 1;}
 }
-

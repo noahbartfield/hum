@@ -28,6 +28,11 @@
       "username": "ted",
       "password": "t",
       "id": 5
+    },
+    {
+      "username": "bennett",
+      "password": "b",
+      "id": 6
     }
   ],
   "songs": [
@@ -88,14 +93,6 @@
       "id": 16
     },
     {
-      "title": "Bridge over Troubled Water",
-      "lyrics": "[Verse 1]\r\n Hello darkness, my old friend\r\n I've come to talk with you again\r\n Because a vision softly creeping\r\n Left its seeds while I was sleeping\r\n And the vision that was planted in my brain\r\n Still remains\r\n Within the sound of silence\r\n \r\n [Verse 2]\r\n In restless dreams I walked alone\r\n Narrow streets of cobblestone\r\n 'Neath the halo of a street lamp\r\n I turned my collar to the cold and damp\r\n When my eyes were stabbed by\r\n The flash of a neon light\r\n That split the night\r\n And touched the sound of silence\r\n \r\n [Verse 3]\r\n And in the naked light I saw\r\n Ten thousand people, maybe more\r\n People talking without speaking\r\n People hearing without listening\r\n People writing songs that voices never share\r\n And no one dared\r\n Disturb the sound of silence\r\n \r\n [Verse 4]\r\n \"Fools\", said I, \"You do not know\r\n Silence like a cancer grows\r\n Hear my words that I might teach you\r\n Take my arms that I might reach you\"\r\n But my words, like silent raindrops fell\r\n And echoed in the wells of silence\r\n \r\n [Verse 5]\r\n And the people bowed and prayed\r\n To the neon god they made\r\n And the sign flashed out its warning\r\n In the words that it was forming\r\n And the sign said:\r\n \"The words of the prophets are\r\n Written on the subway walls\r\n And tenement halls\r\n And whispered in the sound of silence.\"",
-      "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568470206873?alt=media&token=b3b493df-6d8b-43f7-aeba-84e41ff7e4d7",
-      "comments": "",
-      "id": 17
-    },
-    {
       "title": "Kiss Me",
       "lyrics": "[Verse 1]\r\n Kiss me, out of the bearded barley\r\n Nightly, beside the green, green grass\r\n Swing, swing, swing the spinning step\r\n You wear those shoes and I will wear that dress\r\n \r\n [Chorus]\r\n Oh, kiss me, beneath the milky twilight\r\n Lead me out on the moonlit floor\r\n Lift your open hand\r\n Strike up the band and make the fireflies dance\r\n Silver moon's sparkling\r\n So kiss me\r\n \r\n [Verse 2]\r\n Kiss me, down by the broken tree house\r\n Swing me upon its hanging tire\r\n Bring, bring, bring your flowered hat\r\n We'll take the trail marked on your father's map\r\n \r\n [Chorus]\r\n Oh, kiss me, beneath the milky twilight\r\n Lead me out on the moonlit floor\r\n Lift your open hand\r\n Strike up the band and make the fireflies dance\r\n Silver moon's sparkling\r\n So kiss me\r\n Kiss me, beneath the milky twilight\r\n Lead me out on the moonlit floor\r\n Lift your open hand\r\n Strike up the band and make the fireflies dance\r\n Silver moon's sparkling\r\n So kiss me\r\n \r\n [Outro]\r\n So kiss me\r\n So kiss me\r\n So kiss me",
       "userId": 1,
@@ -126,6 +123,38 @@
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568517860178?alt=media&token=987e0889-57cf-4960-acd7-231084e223f0",
       "userId": 1,
       "comments": "Burt"
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568731805918?alt=media&token=ec520e71-47c7-41fc-8745-ee47c9bc61ad",
+      "comments": "",
+      "id": 23
+    },
+    {
+      "title": "Hotel California",
+      "lyrics": "[Verse 1: Don Henley]\r\n On a dark desert highway, cool wind in my hair\r\n Warm smell of colitas rising up through the air\r\n Up ahead in the distance, I saw a shimmering light\r\n My head grew heavy and my sight grew dim\r\n I had to stop for the night\r\n There she stood in the doorway, I heard the mission bell\r\n And I was thinking to myself\r\n \"This could be Heaven or this could be Hell\"\r\n Then she lit up a candle and she showed me the way\r\n There were voices down the corridor\r\n I thought I heard them say\r\n \r\n [Hook]\r\n \"Welcome to the Hotel California\r\n Such a lovely place\r\n Such a lovely face\r\n Plenty of room at the Hotel California\r\n Any time of year\r\n You can find it here\"\r\n \r\n [Verse 2]\r\n Her mind is Tiffany-twisted, she got the Mercedes Benz\r\n She got a lot of pretty, pretty boys she calls friends\r\n How they dance in the courtyard, sweet summer sweat\r\n Some dance to remember, some dance to forget\r\n So I called up the Captain, \"Please bring me my wine\"\r\n He said, \"We haven't had that spirit here since 1969\"\r\n And still those voices are calling from far away\r\n Wake you up in the middle of the night\r\n Just to hear them say\r\n \r\n [Hook]\r\n \"Welcome to the Hotel California\r\n Such a lovely place (Such a lovely place)\r\n Such a lovely face\r\n They living it up at the Hotel California\r\n What a nice surprise (what a nice surprise)\r\n Bring your alibis\"\r\n \r\n [Verse 3]\r\n Mirrors on the ceiling, the pink champagne on ice\r\n And she said: \"We are all just prisoners here of our own device\"\r\n And in the master's chambers, they gathered for the feast\r\n They stab it with their steely knives, but they just can't kill the beast\r\n Last thing I remember, I was running for the door\r\n I had to find the passage back to the place I was before\r\n \"Relax,\" said the night man, \"We are programmed to receive\r\n You can checkout any time you like, but you can never leave!\"\r\n \r\n [Guitar Solo]",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568747024068?alt=media&token=a66f6fbf-f402-486f-b9d9-89483bbba205",
+      "comments": "This one never gets old!",
+      "id": 24
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568749055472?alt=media&token=10e3263c-33fc-445c-817e-c765b4c13bfb",
+      "comments": "",
+      "id": 25
+    },
+    {
+      "title": "Girl",
+      "lyrics": "[Verse 1]\r\n Is there anybody going to listen to my story\r\n All about the girl who came to stay?\r\n She's the kind of girl you want so much\r\n It makes you sorry\r\n Still, you don't regret a single day\r\n Ah girl\r\n Girl, girl\r\n \r\n [Verse 2]\r\n When I think of all the times I've tried so hard to leave her\r\n She will turn to me and start to cry\r\n And she promises the earth to me\r\n And I believe her\r\n After all this times I don't know why\r\n Ah, girl\r\n Girl, girl\r\n \r\n [Verse 3]\r\n She's the kind of girl who puts you down\r\n When friends are there, you feel a fool\r\n When you say she's looking good\r\n She acts as if it's understood\r\n She's cool, cool, cool, cool\r\n Girl\r\n Girl, girl\r\n \r\n [Verse 4]\r\n Was she told when she was young that pain\r\n Would lead to pleasure?\r\n Did she understand it when they said\r\n That a man must break his back to earn\r\n His day of leisure?\r\n Will she still believe it when he's dead?\r\n Ah girl\r\n Girl, girl\r\n \r\n [Outro]\r\n Ah girl\r\n Girl, girl",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568749354549?alt=media&token=79bb231d-f758-4c08-9dd6-8fb741c1de7b",
+      "comments": "",
+      "id": 26
     }
   ],
   "themes": [

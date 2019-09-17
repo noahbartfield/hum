@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .deleteButton {
     margin-bottom: 20px !important;
     width: 40px !important;
@@ -12,6 +14,9 @@
 }
 
 .trackButton {
+    background-color: rgb(250, 245, 241) !important;
+    font-weight: 100 !important;
+    font-family: 'Roboto', sans-serif !important;
     background-color: white !important;
     transition: 0.4s !important;
 }
@@ -19,4 +24,20 @@
 .trackButton:hover {
     color: rgb(122, 3, 3) !important;
     transition: 0.4s !important;
+}
+
+.modalHeader {
+    background-color: rgb(255, 251, 247) !important;
+}
+
+.lyricsAndComments {
+    background-color: rgb(250, 245, 241);
+    display: flex;
+    justify-content: space-around;
+}
+
+.lyricsInModal {
+    width: 600px;
+    height: 400px;
+    overflow: scroll;
 }
