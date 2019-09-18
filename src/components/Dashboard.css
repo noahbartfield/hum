@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body {
     background-color: rgb(252, 245, 238);
@@ -47,7 +47,7 @@ body {
 }
 
 #logOutButton {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: rgb(250, 245, 241);
 }
 
@@ -67,24 +67,32 @@ body {
 }
 
 .noResults {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-.fileUploadContainer {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 200px;
+.uploadContainer {
+    margin-top: 150px;
     display: flex;
     justify-content: center;
+}
+
+.fileUploadContainer {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.submitUpload {
+    text-align: center;
 }
 
 .viewResultsButton {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
 }
-
-
 
 .blink {
     background-color: rgb(97, 0, 0) !important;
@@ -99,13 +107,13 @@ body {
 }
 
 .lyricsAndComments {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Lato', sans-serif !important;
     display: flex;
     justify-content: space-around;
 }
 
 .lyricsInModal {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     width: 600px;
     height: 400px;
     overflow: scroll;

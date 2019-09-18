@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 .deleteButton {
     margin-bottom: 20px !important;
@@ -16,7 +16,7 @@
 .trackButton {
     background-color: rgb(250, 245, 241) !important;
     font-weight: 100 !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Lato', sans-serif !important;
     background-color: white !important;
     transition: 0.4s !important;
 }
