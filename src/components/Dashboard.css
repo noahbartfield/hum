@@ -43,12 +43,18 @@ body {
 #logOutContainer {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(250, 245, 241);
+    background-color: #db2828;
 }
 
 #logOutButton {
-    font-family: 'Lato', sans-serif;
-    background-color: rgb(250, 245, 241);
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #db2828;
+    color: #ecc3c3 !important;
+    opacity: 1;
+}
+
+#logOutButton:hover {
+    color: #ffffff !important;
 }
 
 .showButton {
@@ -56,7 +62,8 @@ body {
 }
 
 .sidebar {
-    background-color: rgb(250, 245, 241) !important;
+    background-color: #db2828 !important;
+    /* opacity: 0.8; */
     /* flex-basis: 30%; */
     /* visibility: hidden; */
 }
@@ -72,7 +79,7 @@ body {
 }
 
 .uploadContainer {
-    margin-top: 150px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
 }
@@ -103,7 +110,8 @@ body {
 }
 
 .modalHeader {
-    background-color: rgb(255, 251, 247) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: rgb(252, 245, 238) !important;
 }
 
 .lyricsAndComments {
@@ -116,8 +124,33 @@ body {
     font-family: 'Lato', sans-serif;
     width: 600px;
     height: 400px;
+    padding: 5px;
     overflow: scroll;
 }
+
+.commentsTitle {
+    padding: 5px;
+}
+
+.textArea {
+    color: grey;
+    font-size: 11px;
+}
+
+.textArea:focus {
+    color: black;
+    /* font-size: 11px; */
+}
+
+.saveButton {
+    background-color: rgb(226, 216, 206) !important;
+    /* opacity: 0.8; */
+    /* color: #ecc3c3 !important; */
+}
+/* 
+.saveButton:hover {
+    color: #ffffff !important;
+} */
 
 @keyframes blink {
     0% {opacity: 1;}

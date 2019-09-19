@@ -22,6 +22,11 @@
       "username": "jake",
       "password": "j",
       "id": 4
+    },
+    {
+      "username": "andy",
+      "password": "a",
+      "id": 5
     }
   ],
   "songs": [
@@ -42,20 +47,20 @@
       "comments": "Great Song"
     },
     {
+      "id": 11,
       "title": "Yellow Submarine (Documentary)",
       "lyrics": "[Verse 1]\r\n In the town where I was born\r\n Lived a man who sailed to sea\r\n And he told us of his life\r\n In the land of submarines\r\n \r\n [Verse 2]\r\n So we sailed up to the sun\r\n Till we found the sea of green\r\n And we lived beneath the waves\r\n In our yellow submarine\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Verse 3]\r\n And our friends are all aboard\r\n Many more of them live next door\r\n And the band begins to play\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Bridge]\r\n Full speed ahead, Mr. Parker, full speed ahead\r\n Full speed over here, sir\r\n Action station, action station\r\n Aye, aye, sir, fire\r\n Heaven, heaven\r\n \r\n [Verse 4]\r\n As we live a life of ease\r\n Everyone of us has all we need  (has all we need)\r\n Sky of blue (sky of blue) and sea of green (and sea of green)\r\n In our (In our) yellow submarine (yellow submarine, ha-ha!)\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine",
-      "userId": 1,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568408166581?alt=media&token=b3031fcd-820d-4610-a9ad-22f04be39aab",
-      "comments": "",
-      "id": 11
+      "userId": 1,
+      "comments": "What a fun Song to sing when you're looking for a nice song to sing on a nice sunny, druggy kind of day."
     },
     {
+      "id": 12,
       "title": "Happy Birthday",
       "lyrics": "[Verse]\nHappy Birthday to you\nHappy Birthday to you\nHappy Birthday to Jane\nHappy Birthday to you",
-      "userId": 1,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568408941325?alt=media&token=588b881d-ced4-4d1e-98fc-6ebaa3d3f05c",
-      "comments": "finally a win",
-      "id": 12
+      "userId": 1,
+      "comments": "finally a win for Bryan"
     },
     {
       "id": 13,
@@ -144,6 +149,22 @@
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822953285?alt=media&token=dff3368c-7b4d-4336-a217-793507e893b7",
       "comments": "",
       "id": 27
+    },
+    {
+      "title": "She Always a Woman (Album Version)",
+      "lyrics": "She can kill with a smile, she can wound with her eyes\r\n She can ruin your faith with her casual lies\r\n And she only reveals what she wants you to see\r\n She hides like a child but she's always a woman to me\r\n \r\n She can lead you to love, she can take you or leave you\r\n She can ask for the truth but she'll never believe you\r\n And she'll take what you give her as long as it's free\r\n Yeah she steals like a thief but she's always a woman to me\r\n \r\n [Bridge]\r\n Oh, she takes care of herself, she can wait if she wants\r\n She's ahead of her time\r\n Oh, and she never gives out and she never gives in\r\n She just changes her mind\r\n \r\n And she'll promise you more than the Garden of Eden\r\n Then she'll carelessly cut you and laugh while you're bleeding\r\n But she brings out the best and the worst you can be\r\n Blame it all on yourself cause she's always a woman to me\r\n \r\n [Bridge]\r\n \r\n She is frequently kind and she's suddenly cruel\r\n She can do as she pleases, she's nobody's fool\r\n But she can't be convicted, she's earned her degree\r\n And the most she will do is throw shadows at you\r\n But she's always a woman to me",
+      "userId": 5,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568834013868?alt=media&token=93791184-3084-4eed-a56c-ab26e442b257",
+      "comments": "",
+      "id": 28
+    },
+    {
+      "title": "Raindrops Keep Falling on My Head",
+      "lyrics": "Raindrops are fallin' on my head\r\n And just like the guy whose feet are too big for his bed\r\n Nothin' seems to fit\r\n Those raindrops are fallin' on my head, they keep fallin'\r\n \r\n So I just did me some talkin' to the sun\r\n And I said I didn't like the way he got things done\r\n He's sleepin' on the job\r\n Those raindrops are fallin' on my head, they keep fallin'\r\n \r\n But there's one thing I know\r\n The blues they send to greet me won't defeat me\r\n It won't be long till happiness steps up to greet me\r\n \r\n Raindrops keep fallin' on my head\r\n But that doesn't mean my eyes will soon be turnin' red\r\n Crying's not for me\r\n Cause I'm never gonna stop the rain by complainin'\r\n Because I'm free\r\n Nothing's worryin' me\r\n \r\n *trumpet*\r\n \r\n It won't be long till happiness steps up to greet me\r\n \r\n The raindrops keep fallin' on my head\r\n But that doesn't mean my eyes will soon be turnin' red\r\n Crying's not for me\r\n Cause I'm never gonna stop the rain by complainin'\r\n Because I'm free\r\n \r\n Nothing's worryin' me",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568839794592?alt=media&token=20670183-0b39-41cc-8433-c14f65d4d02a",
+      "comments": "What a great song this is.",
+      "id": 29
     }
   ],
   "themes": [

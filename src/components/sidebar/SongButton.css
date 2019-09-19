@@ -1,43 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+.songButtonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .deleteButton {
     margin-bottom: 20px !important;
     width: 40px !important;
-    justify-content: center;
-    background-color: rgb(207, 207, 207) !important;
+    text-align: center;
+    background-color: #db2828 !important;
     transition: 0.4s !important;
+    color: #ecc3c3 !important;
+    opacity: 1;
 }
 
 .deleteButton:hover {
-    color: rgb(122, 3, 3) !important;
+    color: rgb(255, 255, 255) !important;
     transition: 0.4s !important;
 }
 
 .trackButton {
-    background-color: rgb(250, 245, 241) !important;
-    font-weight: 100 !important;
+    background-color: #db2828 !important;
+    font-weight: 800 !important;
     font-family: 'Lato', sans-serif !important;
-    background-color: white !important;
     transition: 0.4s !important;
+    color: #ecc3c3 !important;
+    opacity: 1;
+    /* text-shadow: 1px 1px #ecc3c3 !important; */
 }
 
 .trackButton:hover {
-    color: rgb(122, 3, 3) !important;
+    color: rgb(255, 255, 255) !important;
     transition: 0.4s !important;
 }
 
 .modalHeader {
-    background-color: rgb(255, 251, 247) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: rgb(252, 245, 238) !important;
 }
 
 .lyricsAndComments {
     background-color: rgb(250, 245, 241);
     display: flex;
     justify-content: space-around;
+    color: grey;
 }
 
 .lyricsInModal {
+    padding: 5px;
     width: 600px;
     height: 400px;
     overflow: scroll;
 }
+
+.commentsTitle {
+    /* color: grey; */
+    padding: 5px;
+}
+
+.textArea {
+    color: grey;
+    font-size: 11px;
+}
+
+.textArea:focus {
+    color: black;
+    /* font-size: 11px; */
+}
+
+/* .saveButton {
+    background-color: #db2828 !important; */
+    /* opacity: 0.8; */
+    /* color: #ecc3c3 !important;
+} */
+
+/* .saveButton:hover {
+    color: #ffffff !important;
+    opacity: 1;
+} */

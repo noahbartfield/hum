@@ -91,6 +91,7 @@ class Dashboard extends Component {
                 this.getSong()
             }
             this.state.mediaRecorder.ondataavailable = e => {
+                console.log("1234")
                 chunks.push(e.data);
             }
         })
@@ -221,11 +222,11 @@ class Dashboard extends Component {
         comments: ""
     })
 
-    toggleModal = () => {
-        this.setState({
-            active: !this.state.active
-        })
-    }
+    // toggleModal = () => {
+    //     this.setState({
+    //         active: !this.state.active
+    //     })
+    // }
 
     showModal = () => {
         this.setState({
@@ -341,7 +342,7 @@ class Dashboard extends Component {
                                         type="file"
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
-                                    {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui button small submitUpload"type="submit" content="upload" color="blue" />}
+                                    {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui button small submitUpload"type="submit" content="upload" />}
                                 </Form>
                                 </div>
                             </div>

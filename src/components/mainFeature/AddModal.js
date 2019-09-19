@@ -18,12 +18,12 @@ class AddModal extends Component {
                     }
                     </Modal.Content>
                     <Modal.Content>
-                        <h3>Comments</h3>
+                        <h3 className="commentsTitle">Comments</h3>
                         <label htmlFor="comments"></label>
-                        <textarea rows="20" cols="20" id="comments" onChange={this.props.handleFieldChange} value={this.props.comments}></textarea>
+                        <textarea className="textArea" rows="20" cols="15" id="comments" onChange={this.props.handleFieldChange} value={this.props.comments}></textarea>
                     </Modal.Content>
                 </div>
-                <Button color="blue" attached onClick={this.props.addSong}>Save</Button>
+                <Button color="red" attached onClick={this.props.addSong}>Save</Button>
             </Modal>
         )
     }
