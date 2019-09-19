@@ -19,20 +19,14 @@
       "id": 3
     },
     {
-      "username": "bobby",
-      "password": "b",
-      "themeId": 1,
+      "username": "jake",
+      "password": "j",
       "id": 4
     },
     {
-      "username": "ted",
-      "password": "t",
+      "username": "andy",
+      "password": "a",
       "id": 5
-    },
-    {
-      "username": "bennett",
-      "password": "b",
-      "id": 6
     }
   ],
   "songs": [
@@ -53,20 +47,20 @@
       "comments": "Great Song"
     },
     {
+      "id": 11,
       "title": "Yellow Submarine (Documentary)",
       "lyrics": "[Verse 1]\r\n In the town where I was born\r\n Lived a man who sailed to sea\r\n And he told us of his life\r\n In the land of submarines\r\n \r\n [Verse 2]\r\n So we sailed up to the sun\r\n Till we found the sea of green\r\n And we lived beneath the waves\r\n In our yellow submarine\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Verse 3]\r\n And our friends are all aboard\r\n Many more of them live next door\r\n And the band begins to play\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n \r\n [Bridge]\r\n Full speed ahead, Mr. Parker, full speed ahead\r\n Full speed over here, sir\r\n Action station, action station\r\n Aye, aye, sir, fire\r\n Heaven, heaven\r\n \r\n [Verse 4]\r\n As we live a life of ease\r\n Everyone of us has all we need  (has all we need)\r\n Sky of blue (sky of blue) and sea of green (and sea of green)\r\n In our (In our) yellow submarine (yellow submarine, ha-ha!)\r\n \r\n [Chorus]\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine\r\n We all live in a yellow submarine\r\n Yellow submarine, yellow submarine",
-      "userId": 1,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568408166581?alt=media&token=b3031fcd-820d-4610-a9ad-22f04be39aab",
-      "comments": "",
-      "id": 11
+      "userId": 1,
+      "comments": "What a fun Song to sing when you're looking for a nice song to sing on a nice sunny, druggy kind of day."
     },
     {
+      "id": 12,
       "title": "Happy Birthday",
       "lyrics": "[Verse]\nHappy Birthday to you\nHappy Birthday to you\nHappy Birthday to Jane\nHappy Birthday to you",
-      "userId": 1,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568408941325?alt=media&token=588b881d-ced4-4d1e-98fc-6ebaa3d3f05c",
-      "comments": "finally a win",
-      "id": 12
+      "userId": 1,
+      "comments": "finally a win for Bryan"
     },
     {
       "id": 13,
@@ -101,12 +95,12 @@
       "id": 19
     },
     {
+      "id": 20,
       "title": "Oh, Darling",
       "lyrics": "[Chorus 1]\r\n Oh! Darling, please believe me\r\n I'll never do you no harm\r\n Believe me when I tell you\r\n I'll never do you no harm\r\n \r\n [Chorus 2]\r\n Oh! Darling, if you leave me\r\n I'll never make it alone\r\n Believe me when I beg you\r\n Don't ever leave me alone\r\n \r\n [Chorus 3]\r\n When you told me you didn't need me anymore\r\n Well you know I nearly broke down and cried\r\n When you told me you didn't need me anymore\r\n Well you know I nearly fell down and died\r\n \r\n [Chorus 2]\r\n Oh! Darling, if you leave me\r\n I'll never make it alone\r\n Believe me when I tell you\r\n I'll never do you no harm, believe me darling\r\n \r\n [Chorus 3]\r\n When you told me you didn't need me anymore\r\n Well you know I nearly broke down and cried\r\n When you told me you didn't need me anymore\r\n Well you know I nearly fell down and died\r\n \r\n [Chorus 1]\r\n Oh! Darling, please believe me\r\n I'll never let you down, believe me darling\r\n Believe me when I tell you\r\n I'll never do you no harm",
-      "userId": 1,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568492343612?alt=media&token=cb3a6635-1a7f-4db3-ad4a-6f35f02a4ced",
-      "comments": "",
-      "id": 20
+      "userId": 1,
+      "comments": "Paul"
     },
     {
       "id": 21,
@@ -125,14 +119,6 @@
       "comments": "Burt"
     },
     {
-      "title": "Bohemian Rhapsody",
-      "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
-      "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568731805918?alt=media&token=ec520e71-47c7-41fc-8745-ee47c9bc61ad",
-      "comments": "",
-      "id": 23
-    },
-    {
       "title": "Hotel California",
       "lyrics": "[Verse 1: Don Henley]\r\n On a dark desert highway, cool wind in my hair\r\n Warm smell of colitas rising up through the air\r\n Up ahead in the distance, I saw a shimmering light\r\n My head grew heavy and my sight grew dim\r\n I had to stop for the night\r\n There she stood in the doorway, I heard the mission bell\r\n And I was thinking to myself\r\n \"This could be Heaven or this could be Hell\"\r\n Then she lit up a candle and she showed me the way\r\n There were voices down the corridor\r\n I thought I heard them say\r\n \r\n [Hook]\r\n \"Welcome to the Hotel California\r\n Such a lovely place\r\n Such a lovely face\r\n Plenty of room at the Hotel California\r\n Any time of year\r\n You can find it here\"\r\n \r\n [Verse 2]\r\n Her mind is Tiffany-twisted, she got the Mercedes Benz\r\n She got a lot of pretty, pretty boys she calls friends\r\n How they dance in the courtyard, sweet summer sweat\r\n Some dance to remember, some dance to forget\r\n So I called up the Captain, \"Please bring me my wine\"\r\n He said, \"We haven't had that spirit here since 1969\"\r\n And still those voices are calling from far away\r\n Wake you up in the middle of the night\r\n Just to hear them say\r\n \r\n [Hook]\r\n \"Welcome to the Hotel California\r\n Such a lovely place (Such a lovely place)\r\n Such a lovely face\r\n They living it up at the Hotel California\r\n What a nice surprise (what a nice surprise)\r\n Bring your alibis\"\r\n \r\n [Verse 3]\r\n Mirrors on the ceiling, the pink champagne on ice\r\n And she said: \"We are all just prisoners here of our own device\"\r\n And in the master's chambers, they gathered for the feast\r\n They stab it with their steely knives, but they just can't kill the beast\r\n Last thing I remember, I was running for the door\r\n I had to find the passage back to the place I was before\r\n \"Relax,\" said the night man, \"We are programmed to receive\r\n You can checkout any time you like, but you can never leave!\"\r\n \r\n [Guitar Solo]",
       "userId": 1,
@@ -141,20 +127,44 @@
       "id": 24
     },
     {
-      "title": "Bohemian Rhapsody",
-      "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
-      "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568749055472?alt=media&token=10e3263c-33fc-445c-817e-c765b4c13bfb",
-      "comments": "",
-      "id": 25
+      "id": 25,
+      "title": "I'll Never Fall In Love Again",
+      "lyrics": "What do you get when you fall in love?\r\n A guy with a pin to burst your bubble\r\n That's what you get for all your trouble\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you kiss a guy?\r\n You get enough germs to catch pneumonia\r\n After you do, he'll never phone you\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n Don't tell me what is all about\r\n 'Cause I've been there and I'm glad I'm out\r\n Out of those chains, those chains that bind you\r\n That is why I'm here to remind you\r\n \r\n What do you get when you fall in love?\r\n You get enough tears to fill an ocean\r\n That's what you get for your devotion\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you fall in love?\r\n You only get lies and pain and sorrow\r\n So, for at least until tomorrow\r\n I'll never fall in love again!\r\n I'll never fall in love again!",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822846426?alt=media&token=9949c6e5-3195-4a83-8578-418a26131acd",
+      "userId": 4,
+      "comments": "Burt B"
     },
     {
-      "title": "Girl",
-      "lyrics": "[Verse 1]\r\n Is there anybody going to listen to my story\r\n All about the girl who came to stay?\r\n She's the kind of girl you want so much\r\n It makes you sorry\r\n Still, you don't regret a single day\r\n Ah girl\r\n Girl, girl\r\n \r\n [Verse 2]\r\n When I think of all the times I've tried so hard to leave her\r\n She will turn to me and start to cry\r\n And she promises the earth to me\r\n And I believe her\r\n After all this times I don't know why\r\n Ah, girl\r\n Girl, girl\r\n \r\n [Verse 3]\r\n She's the kind of girl who puts you down\r\n When friends are there, you feel a fool\r\n When you say she's looking good\r\n She acts as if it's understood\r\n She's cool, cool, cool, cool\r\n Girl\r\n Girl, girl\r\n \r\n [Verse 4]\r\n Was she told when she was young that pain\r\n Would lead to pleasure?\r\n Did she understand it when they said\r\n That a man must break his back to earn\r\n His day of leisure?\r\n Will she still believe it when he's dead?\r\n Ah girl\r\n Girl, girl\r\n \r\n [Outro]\r\n Ah girl\r\n Girl, girl",
-      "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568749354549?alt=media&token=79bb231d-f758-4c08-9dd6-8fb741c1de7b",
+      "title": "Bohemian Rhapsody",
+      "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
+      "userId": 4,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822880322?alt=media&token=9a3d1abe-fb61-4548-b040-259123b7541c",
       "comments": "",
       "id": 26
+    },
+    {
+      "title": "She Always a Woman (Album Version)",
+      "lyrics": "She can kill with a smile, she can wound with her eyes\r\n She can ruin your faith with her casual lies\r\n And she only reveals what she wants you to see\r\n She hides like a child but she's always a woman to me\r\n \r\n She can lead you to love, she can take you or leave you\r\n She can ask for the truth but she'll never believe you\r\n And she'll take what you give her as long as it's free\r\n Yeah she steals like a thief but she's always a woman to me\r\n \r\n [Bridge]\r\n Oh, she takes care of herself, she can wait if she wants\r\n She's ahead of her time\r\n Oh, and she never gives out and she never gives in\r\n She just changes her mind\r\n \r\n And she'll promise you more than the Garden of Eden\r\n Then she'll carelessly cut you and laugh while you're bleeding\r\n But she brings out the best and the worst you can be\r\n Blame it all on yourself cause she's always a woman to me\r\n \r\n [Bridge]\r\n \r\n She is frequently kind and she's suddenly cruel\r\n She can do as she pleases, she's nobody's fool\r\n But she can't be convicted, she's earned her degree\r\n And the most she will do is throw shadows at you\r\n But she's always a woman to me",
+      "userId": 4,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822953285?alt=media&token=dff3368c-7b4d-4336-a217-793507e893b7",
+      "comments": "",
+      "id": 27
+    },
+    {
+      "title": "She Always a Woman (Album Version)",
+      "lyrics": "She can kill with a smile, she can wound with her eyes\r\n She can ruin your faith with her casual lies\r\n And she only reveals what she wants you to see\r\n She hides like a child but she's always a woman to me\r\n \r\n She can lead you to love, she can take you or leave you\r\n She can ask for the truth but she'll never believe you\r\n And she'll take what you give her as long as it's free\r\n Yeah she steals like a thief but she's always a woman to me\r\n \r\n [Bridge]\r\n Oh, she takes care of herself, she can wait if she wants\r\n She's ahead of her time\r\n Oh, and she never gives out and she never gives in\r\n She just changes her mind\r\n \r\n And she'll promise you more than the Garden of Eden\r\n Then she'll carelessly cut you and laugh while you're bleeding\r\n But she brings out the best and the worst you can be\r\n Blame it all on yourself cause she's always a woman to me\r\n \r\n [Bridge]\r\n \r\n She is frequently kind and she's suddenly cruel\r\n She can do as she pleases, she's nobody's fool\r\n But she can't be convicted, she's earned her degree\r\n And the most she will do is throw shadows at you\r\n But she's always a woman to me",
+      "userId": 5,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568834013868?alt=media&token=93791184-3084-4eed-a56c-ab26e442b257",
+      "comments": "",
+      "id": 28
+    },
+    {
+      "title": "Raindrops Keep Falling on My Head",
+      "lyrics": "Raindrops are fallin' on my head\r\n And just like the guy whose feet are too big for his bed\r\n Nothin' seems to fit\r\n Those raindrops are fallin' on my head, they keep fallin'\r\n \r\n So I just did me some talkin' to the sun\r\n And I said I didn't like the way he got things done\r\n He's sleepin' on the job\r\n Those raindrops are fallin' on my head, they keep fallin'\r\n \r\n But there's one thing I know\r\n The blues they send to greet me won't defeat me\r\n It won't be long till happiness steps up to greet me\r\n \r\n Raindrops keep fallin' on my head\r\n But that doesn't mean my eyes will soon be turnin' red\r\n Crying's not for me\r\n Cause I'm never gonna stop the rain by complainin'\r\n Because I'm free\r\n Nothing's worryin' me\r\n \r\n *trumpet*\r\n \r\n It won't be long till happiness steps up to greet me\r\n \r\n The raindrops keep fallin' on my head\r\n But that doesn't mean my eyes will soon be turnin' red\r\n Crying's not for me\r\n Cause I'm never gonna stop the rain by complainin'\r\n Because I'm free\r\n \r\n Nothing's worryin' me",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568839794592?alt=media&token=20670183-0b39-41cc-8433-c14f65d4d02a",
+      "comments": "What a great song this is.",
+      "id": 29
     }
   ],
   "themes": [

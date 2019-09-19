@@ -13,7 +13,6 @@ class Login extends Component {
         id: 0
     }
 
-    // Update state whenever an input field is edited
     handleFieldChange = (event) => {
         const stateToChange = {}
         stateToChange[event.target.id] = event.target.value
@@ -50,9 +49,6 @@ class Login extends Component {
                 <div className="titleContainer">
                     <h1 className="title">h u m</h1>
                 </div>
-                {/* <div className="titleContainer">
-                    <h4 className="subtitle">sing a song</h4>
-                </div> */}
                 <form onSubmit={this.handleLogin}>
                 <div className="formField">
                         <h3 className="subtitle">Login</h3>

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Button, Header, Form, Icon, Sidebar, Menu } from 'semantic-ui-react'
-// import { Link } from "react-router-dom"
 import * as firebase from 'firebase/app';
 import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
@@ -26,7 +25,8 @@ class Dashboard extends Component {
         active: false,
         noResults: false,
         visible: false,
-        loading: false
+        loading: false,
+        fileField: ""
     }
 
     signOut = () => {
@@ -43,8 +43,6 @@ class Dashboard extends Component {
             this.setState({ songs: songs })
         })
     }
-
-    
 
     // record button /////////////////////////////
 
@@ -93,12 +91,11 @@ class Dashboard extends Component {
                 this.getSong()
             }
             this.state.mediaRecorder.ondataavailable = e => {
+                console.log("1234")
                 chunks.push(e.data);
             }
         })
     }
-
-
 
     // Interacting with Firebase and API ///////////////////////
 
@@ -126,7 +123,8 @@ class Dashboard extends Component {
                 this.setState({
                     noResults: true,
                     loading: false,
-                    audio: ""
+                    audio: "",
+                    fileField: Math.random() * 99999999999999
                 })
             } else {
                 AuddManager.get(this.state.audioURL)
@@ -136,7 +134,8 @@ class Dashboard extends Component {
                             this.setState({
                                 noResults: true,
                                 loading: false,
-                                audio: ""
+                                audio: "",
+                                fileField: Math.random() * 99999999999999
                             })
                         } else if (foundSong.result !== null) {
                             // AuddManager.getLyrics(foundSong.result.list[0].artist, foundSong.result.list[0].title.split('(')[0])
@@ -149,15 +148,17 @@ class Dashboard extends Component {
                                             title: foundSong.result.list[0].title,
                                             lyrics: lyrics.result[0].lyrics,
                                             loading: false,
-                                            audio: ""
+                                            audio: "",
+                                            fileField: Math.random() * 99999999999999
                                         })
-                                        this.toggleModal()
+                                        this.showModal()
                                     } else {
                                         console.log("NO LYRICS")
                                         this.setState({
                                             noResults: true,
                                             loading: false,
-                                            audio: ""
+                                            audio: "",
+                                            fileField: Math.random() * 99999999999999
                                         })
                                     }
                                 })
@@ -165,15 +166,14 @@ class Dashboard extends Component {
                             this.setState({
                                 noResults: true,
                                 loading: false,
-                                audio: ""
+                                audio: "",
+                                fileField: Math.random() * 99999999999999
                             })
                         }
                     })
             }
         })
     };
-
-
 
     // Modal Functions //////////////////////////
 
@@ -187,7 +187,7 @@ class Dashboard extends Component {
             comments: this.state.comments
         }).then(() => {
             this.updateSongs()
-            this.toggleModal()
+            this.dontShowModal()
             this.setState({
                 audioURL: "",
                 recording: false,
@@ -222,9 +222,21 @@ class Dashboard extends Component {
         comments: ""
     })
 
-    toggleModal = () => {
+    // toggleModal = () => {
+    //     this.setState({
+    //         active: !this.state.active
+    //     })
+    // }
+
+    showModal = () => {
         this.setState({
-            active: !this.state.active
+            active: true
+        })
+    }
+
+    dontShowModal = () => {
+        this.setState({
+            active: false
         })
     }
 
@@ -320,16 +332,19 @@ class Dashboard extends Component {
                                     />
                                 </div>
                                 }
+                                <div className="uploadContainer">
                                 <Form className="fileUploadContainer" onSubmit={this.getSong}>
                                     <h5 className="uploadText">or upload</h5>
                                     <Form.Field
+                                        key={this.state.fileField}
                                         className="fileUploadField"
                                         control="input"
                                         type="file"
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
-                                    {(!isLoading && this.state.audio !== "") && <Button className="ui button small"type="submit" content="upload" color="blue" />}
+                                    {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui button small submitUpload"type="submit" content="upload" />}
                                 </Form>
+                                </div>
                             </div>
                         </Sidebar.Pusher>
                     </Sidebar.Pushable>
