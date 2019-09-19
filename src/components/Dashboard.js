@@ -296,7 +296,7 @@ class Dashboard extends Component {
                                                     disabled
                                                     onClick={this.toggleMicrophone}
                                                     className="ui circular icon button red massive">
-                                                        Loading
+                                                        <Icon name="Loading"/>
                                                     </Button>
                                                 : <Button
                                                     onClick={this.toggleMicrophone}
