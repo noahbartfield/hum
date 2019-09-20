@@ -80,6 +80,9 @@ class SongButton extends Component {
                         <Modal.Header className="modalHeader">{this.props.song.title.split('(')[0]}</Modal.Header>
                         <div className="lyricsAndComments">
                             <Modal.Content className="lyricsInModal">
+                                {this.props.song.artist !== "" &&
+                                    <h5 className="artistName">{this.props.song.artist}</h5>
+                                }
                                 {this.props.song.lyrics !== "" &&
                                     this.props.song.lyrics.replace("I ", "i ").replace("I'm", "i'm").replace("I'll", "i'll").replace("I've", "i've").split(/(?=[A-Z])/).map(lyric => {
                                         return <p key={Math.random() * 9999999999999}>{lyric.replace("[", "").replace("]", "")}</p>
@@ -93,11 +96,11 @@ class SongButton extends Component {
                                 <textarea className="textArea" rows="20" cols="15" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
                             </Modal.Content>
                         </div>
-                        <Button color="red" attached onClick={this.updateExistingSong}>Save</Button>
+                        <Button className="saveButton" attached onClick={this.updateExistingSong}>Save</Button>
                     </Modal>
                     <Modal className="mini" onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button small"><Icon name="trash alternate outline" /></Button>} closeIcon>
-                        <Modal.Header>Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
-                        <Button color="red" attached onClick={() => this.props.deleteSong(songId)}>Delete</Button>
+                        <Modal.Header className="deleteModal">Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
+                        <Button className="deleteButtonModal" attached onClick={() => this.props.deleteSong(songId)}>Delete</Button>
                     </Modal>
                     </div>
 

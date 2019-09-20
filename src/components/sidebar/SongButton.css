@@ -13,6 +13,7 @@
     transition: 0.4s !important;
     color: #ecc3c3 !important;
     opacity: 1;
+    margin-bottom: 0px !important;
 }
 
 .deleteButton:hover {
@@ -22,7 +23,7 @@
 
 .trackButton {
     background-color: #db2828 !important;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     font-family: 'Lato', sans-serif !important;
     transition: 0.4s !important;
     color: #ecc3c3 !important;
@@ -37,11 +38,16 @@
 
 .modalHeader {
     font-family: 'Montserrat', sans-serif !important;
-    background-color: rgb(252, 245, 238) !important;
+    background-color: #eefbfc !important;
+}
+
+.artistName {
+    text-align: center;
+    font-style: italic;
 }
 
 .lyricsAndComments {
-    background-color: rgb(250, 245, 241);
+    background-color: #eefbfc;
     display: flex;
     justify-content: space-around;
     color: grey;
@@ -62,11 +68,20 @@
 .textArea {
     color: grey;
     font-size: 11px;
+    outline: 0px;
 }
 
 .textArea:focus {
     color: black;
-    /* font-size: 11px; */
+}
+
+.deleteModal {
+    background-color: #eefbfc !important;
+}
+
+.deleteButtonModal {
+    background-color: grey !important;
+    color: #eefbfc !important;
 }
 
 /* .saveButton {

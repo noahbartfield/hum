@@ -20,6 +20,7 @@ class Dashboard extends Component {
         songs: [],
         title: "",
         lyrics: "",
+        artist: "",
         comments: "",
         showModal: false,
         active: false,
@@ -147,6 +148,7 @@ class Dashboard extends Component {
                                         this.setState({
                                             title: foundSong.result.list[0].title,
                                             lyrics: lyrics.result[0].lyrics,
+                                            artist: foundSong.result.list[0].artist,
                                             loading: false,
                                             audio: "",
                                             fileField: Math.random() * 99999999999999
@@ -184,7 +186,8 @@ class Dashboard extends Component {
             lyrics: this.state.lyrics,
             userId: currentUser.id,
             audioURL: this.state.audioURL,
-            comments: this.state.comments
+            comments: this.state.comments,
+            artist: this.state.artist
         }).then(() => {
             this.updateSongs()
             this.dontShowModal()
@@ -222,12 +225,6 @@ class Dashboard extends Component {
         comments: ""
     })
 
-    // toggleModal = () => {
-    //     this.setState({
-    //         active: !this.state.active
-    //     })
-    // }
-
     showModal = () => {
         this.setState({
             active: true
@@ -241,11 +238,7 @@ class Dashboard extends Component {
     }
 
     handleClick = () => {
-        if (this.state.visible === false) {
-            this.setState({ visible: true })
-        } else {
-            this.setState({ visible: false })
-        }
+        this.setState({ visible: !this.state.visible })
     }
 
     render() {
@@ -296,7 +289,7 @@ class Dashboard extends Component {
                                                     disabled
                                                     onClick={this.toggleMicrophone}
                                                     className="ui circular icon button red massive">
-                                                        Loading
+                                                        <Icon name="Loading"/>
                                                     </Button>
                                                 : <Button
                                                     onClick={this.toggleMicrophone}
@@ -313,17 +306,18 @@ class Dashboard extends Component {
                                         </div>
                                     </main>
                                 </div>
-                                {this.state.noResults &&
+                                {(this.state.noResults && !this.state.recording && !this.state.loading) &&
                                     <div className="noResults">
                                         <p>Sorry, No Results</p>
                                     </div>
                                 }
-                                {this.state.active &&
+                                {(this.state.active && !this.state.recording) &&
                                 <div className="viewResultsButton">
                                     <AddModal
                                         {...this.props}
                                         title={this.state.title}
                                         lyrics={this.state.lyrics}
+                                        artist={this.state.artist}
                                         comments={this.state.comments}
                                         addSong={this.addSong}
                                         handleFieldChange={this.handleFieldChange}
@@ -332,7 +326,8 @@ class Dashboard extends Component {
                                     />
                                 </div>
                                 }
-                                <div className="uploadContainer">
+                                {!this.state.recording
+                                ? <div className="uploadContainer">
                                 <Form className="fileUploadContainer" onSubmit={this.getSong}>
                                     <h5 className="uploadText">or upload</h5>
                                     <Form.Field
@@ -342,9 +337,13 @@ class Dashboard extends Component {
                                         type="file"
                                         onChange={(e) => this.setState({ audio: e.target.files[0] })}
                                     />
-                                    {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui button small submitUpload"type="submit" content="upload" />}
+                                    {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui grey button tiny submitUpload" type="submit" content="upload" />}
                                 </Form>
                                 </div>
+                                : <h5 className="recordingInProcess">
+                                    <span className="rec1"><Icon name="music"/></span><span className="rec2"><Icon name="music"/></span><span className="rec3"><Icon name="music"/></span><span className="rec4"><Icon name="music"/></span><span className="rec5"><Icon name="music"/></span>
+                                </h5>
+                                }
                             </div>
                         </Sidebar.Pusher>
                     </Sidebar.Pushable>
