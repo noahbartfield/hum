@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body {
-    background-color: rgb(252, 245, 238);
+    background-color: #eefbfc;
     /* color: rgb(56, 50, 47); */
 }
 
@@ -58,7 +58,8 @@ body {
 }
 
 .showButton {
-    background-color: rgb(252, 245, 238) !important;
+    background-color: #eefbfc !important;
+    margin: 0px;
 }
 
 .sidebar {
@@ -74,7 +75,7 @@ body {
 }
 
 .noResults {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
@@ -92,6 +93,7 @@ body {
 }
 
 .submitUpload {
+    color: #eefbfc !important;
     text-align: center;
 }
 
@@ -99,6 +101,7 @@ body {
     font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
+    color: #eefbfc !important;
 }
 
 .blink {
@@ -109,9 +112,66 @@ body {
 	animation-iteration-count: infinite;
 }
 
+.recordingInProcess {
+    font-weight: 100;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.rec1 {
+    animation-name: dot;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.rec2 {
+    opacity: 0;
+    animation-name: dot;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.rec3 {
+    opacity: 0;
+    animation-name: dot;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.rec4 {
+    opacity: 0;
+    animation-name: dot;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+.rec5 {
+    opacity: 0;
+    animation-name: dot;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+
 .modalHeader {
     font-family: 'Montserrat', sans-serif !important;
-    background-color: rgb(252, 245, 238) !important;
+    background-color: #eefbfc !important;
+}
+
+.artistName {
+    text-align: end;
+    font-style: italic;
 }
 
 .lyricsAndComments {
@@ -135,6 +195,7 @@ body {
 .textArea {
     color: grey;
     font-size: 11px;
+    outline: 0px;
 }
 
 .textArea:focus {
@@ -143,10 +204,12 @@ body {
 }
 
 .saveButton {
-    background-color: rgb(226, 216, 206) !important;
+    background-color: grey!important;
     /* opacity: 0.8; */
-    /* color: #ecc3c3 !important; */
+    color: #eefbfc !important;
 }
+
+
 /* 
 .saveButton:hover {
     color: #ffffff !important;
@@ -156,5 +219,18 @@ body {
     0% {opacity: 1;}
     50% {opacity: .5;}
     100% {opacity: 1;}
+}
+
+@keyframes dot {
+    0% {opacity: 0;}
+    10% {opacity: 0.2;}
+    30% {opacity: 0.4;}
+    40% {opacity: 0.6;}
+    50% {opacity: 0.8;}
+    60% {opacity: 1;}
+    70% {opacity: 0.8;}
+    80% {opacity: 0.6;}
+    90% {opacity: 0.3;}
+    100% {opacity: 0;}
 }
 
