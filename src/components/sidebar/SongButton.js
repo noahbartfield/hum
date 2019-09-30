@@ -94,6 +94,7 @@ class SongButton extends Component {
                                 <h3 className="commentsTitle" >Comments</h3>
                                 <label htmlFor="comments"></label>
                                 <textarea className="textArea" rows="20" cols="15" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
+                                <p className="videoLink"><a href={this.props.song.videoURL} target="_blank" rel="noopener noreferrer"><i>Video:</i> <strong>{this.props.song.title.split('(')[0]}</strong></a></p>
                             </Modal.Content>
                         </div>
                         <Button className="saveButton" attached onClick={this.updateExistingSong}>Save</Button>
