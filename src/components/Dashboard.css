@@ -203,6 +203,10 @@ body {
     /* font-size: 11px; */
 }
 
+.videoLink {
+    padding: 5px;
+}
+
 .saveButton {
     background-color: grey!important;
     /* opacity: 0.8; */

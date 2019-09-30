@@ -1,4 +1,4 @@
-import auddToken from "../apiToken"
+import auddToken from "../auddToken"
 
 
 export default {

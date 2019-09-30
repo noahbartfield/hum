@@ -3,8 +3,9 @@ import { Button, Header, Form, Icon, Sidebar, Menu } from 'semantic-ui-react'
 import * as firebase from 'firebase/app';
 import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
+import YoutubeManager from '../modules/YoutubeManager'
 import AuddManager from "../modules/AuddManager";
-import auddToken from "../apiToken"
+import auddToken from "../auddToken"
 import SongList from "./sidebar/SongList"
 import './Dashboard.css'
 import AddModal from "./mainFeature/AddModal"
@@ -27,7 +28,8 @@ class Dashboard extends Component {
         noResults: false,
         visible: false,
         loading: false,
-        fileField: ""
+        fileField: "",
+        videoURL: ""
     }
 
     signOut = () => {
@@ -140,11 +142,19 @@ class Dashboard extends Component {
                             })
                         } else if (foundSong.result !== null) {
                             // AuddManager.getLyrics(foundSong.result.list[0].artist, foundSong.result.list[0].title.split('(')[0])
+                            const artistAndTitle = `${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}`
                             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=${auddToken}`).then(data => data.json())
                                 .then(lyrics => {
                                     if (lyrics.result.length !== 0) {
                                         console.log(lyrics)
                                         console.log(lyrics.result[0].lyrics)
+                                        YoutubeManager.get(artistAndTitle).then(result => {
+                                            console.log("youtube", result)
+                                            this.setState({
+                                                videoURL: `https://www.youtube.com/watch?v=${result.items[0].id.videoId}`
+                                            })
+
+                                        })
                                         this.setState({
                                             title: foundSong.result.list[0].title,
                                             lyrics: lyrics.result[0].lyrics,
@@ -187,7 +197,8 @@ class Dashboard extends Component {
             userId: currentUser.id,
             audioURL: this.state.audioURL,
             comments: this.state.comments,
-            artist: this.state.artist
+            artist: this.state.artist,
+            videoURL: this.state.videoURL
         }).then(() => {
             this.updateSongs()
             this.dontShowModal()
@@ -200,7 +211,8 @@ class Dashboard extends Component {
                 lyrics: "",
                 comments: "",
                 showModal: false,
-                active: false
+                active: false,
+                videoURL: ""
             })
         })
     }
@@ -222,7 +234,8 @@ class Dashboard extends Component {
         audio: "",
         title: "",
         lyrics: "",
-        comments: ""
+        comments: "",
+        videoURL: ""
     })
 
     showModal = () => {
@@ -289,7 +302,7 @@ class Dashboard extends Component {
                                                     disabled
                                                     onClick={this.toggleMicrophone}
                                                     className="ui circular icon button red massive">
-                                                        <Icon name="Loading"/>
+                                                        <Icon name="spinner"/>
                                                     </Button>
                                                 : <Button
                                                     onClick={this.toggleMicrophone}
@@ -315,6 +328,7 @@ class Dashboard extends Component {
                                 <div className="viewResultsButton">
                                     <AddModal
                                         {...this.props}
+                                        videoURL={this.state.videoURL}
                                         title={this.state.title}
                                         lyrics={this.state.lyrics}
                                         artist={this.state.artist}

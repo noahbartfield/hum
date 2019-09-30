@@ -26,8 +26,9 @@
     font-weight: 600 !important;
     font-family: 'Lato', sans-serif !important;
     transition: 0.4s !important;
-    color: #ecc3c3 !important;
+    color: white !important;
     opacity: 1;
+    font-size: 16px !important;
     /* text-shadow: 1px 1px #ecc3c3 !important; */
 }
 
@@ -73,6 +74,10 @@
 
 .textArea:focus {
     color: black;
+}
+
+.videoLink {
+    padding: 5px;
 }
 
 .deleteModal {

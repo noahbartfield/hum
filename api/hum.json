@@ -36,104 +36,24 @@
   ],
   "songs": [
     {
-      "id": 6,
-      "title": "Girl",
-      "lyrics": "[Verse 1]\r\n Is there anybody going to listen to my story\r\n All about the girl who came to stay?\r\n She's the kind of girl you want so much\r\n It makes you sorry\r\n Still, you don't regret a single day\r\n Ah girl\r\n Girl, girl\r\n \r\n [Verse 2]\r\n When I think of all the times I've tried so hard to leave her\r\n She will turn to me and start to cry\r\n And she promises the earth to me\r\n And I believe her\r\n After all this times I don't know why\r\n Ah, girl\r\n Girl, girl\r\n \r\n [Verse 3]\r\n She's the kind of girl who puts you down\r\n When friends are there, you feel a fool\r\n When you say she's looking good\r\n She acts as if it's understood\r\n She's cool, cool, cool, cool\r\n Girl\r\n Girl, girl\r\n \r\n [Verse 4]\r\n Was she told when she was young that pain\r\n Would lead to pleasure?\r\n Did she understand it when they said\r\n That a man must break his back to earn\r\n His day of leisure?\r\n Will she still believe it when he's dead?\r\n Ah girl\r\n Girl, girl\r\n \r\n [Outro]\r\n Ah girl\r\n Girl, girl",
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568235479756?alt=media&token=b8a3278e-2351-4a26-87b9-c5abfbfd70bd",
-      "userId": 2,
-      "comments": "Never Gets Old!"
-    },
-    {
-      "id": 9,
-      "title": "I'll Never Fall In Love Again",
-      "lyrics": "What do you get when you fall in love?\r\n A guy with a pin to burst your bubble\r\n That's what you get for all your trouble\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you kiss a guy?\r\n You get enough germs to catch pneumonia\r\n After you do, he'll never phone you\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n Don't tell me what is all about\r\n 'Cause I've been there and I'm glad I'm out\r\n Out of those chains, those chains that bind you\r\n That is why I'm here to remind you\r\n \r\n What do you get when you fall in love?\r\n You get enough tears to fill an ocean\r\n That's what you get for your devotion\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you fall in love?\r\n You only get lies and pain and sorrow\r\n So, for at least until tomorrow\r\n I'll never fall in love again!\r\n I'll never fall in love again!",
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568240405689?alt=media&token=37c24cd0-84b9-44a5-b241-883a9c8d3e88",
-      "userId": 2,
-      "comments": "Great Song"
-    },
-    {
-      "id": 13,
-      "title": "Girl",
-      "lyrics": "[Verse 1]\r\n Is there anybody going to listen to my story\r\n All about the girl who came to stay?\r\n She's the kind of girl you want so much\r\n It makes you sorry\r\n Still, you don't regret a single day\r\n Ah girl\r\n Girl, girl\r\n \r\n [Verse 2]\r\n When I think of all the times I've tried so hard to leave her\r\n She will turn to me and start to cry\r\n And she promises the earth to me\r\n And I believe her\r\n After all this times I don't know why\r\n Ah, girl\r\n Girl, girl\r\n \r\n [Verse 3]\r\n She's the kind of girl who puts you down\r\n When friends are there, you feel a fool\r\n When you say she's looking good\r\n She acts as if it's understood\r\n She's cool, cool, cool, cool\r\n Girl\r\n Girl, girl\r\n \r\n [Verse 4]\r\n Was she told when she was young that pain\r\n Would lead to pleasure?\r\n Did she understand it when they said\r\n That a man must break his back to earn\r\n His day of leisure?\r\n Will she still believe it when he's dead?\r\n Ah girl\r\n Girl, girl\r\n \r\n [Outro]\r\n Ah girl\r\n Girl, girl",
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568415458523?alt=media&token=fe4ec58d-c8f4-4658-82b4-33ca5263642d",
-      "userId": 3,
-      "comments": ""
-    },
-    {
-      "id": 25,
-      "title": "I'll Never Fall In Love Again",
-      "lyrics": "What do you get when you fall in love?\r\n A guy with a pin to burst your bubble\r\n That's what you get for all your trouble\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you kiss a guy?\r\n You get enough germs to catch pneumonia\r\n After you do, he'll never phone you\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n Don't tell me what is all about\r\n 'Cause I've been there and I'm glad I'm out\r\n Out of those chains, those chains that bind you\r\n That is why I'm here to remind you\r\n \r\n What do you get when you fall in love?\r\n You get enough tears to fill an ocean\r\n That's what you get for your devotion\r\n I'll never fall in love again\r\n I'll never fall in love again\r\n \r\n What do you get when you fall in love?\r\n You only get lies and pain and sorrow\r\n So, for at least until tomorrow\r\n I'll never fall in love again!\r\n I'll never fall in love again!",
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822846426?alt=media&token=9949c6e5-3195-4a83-8578-418a26131acd",
-      "userId": 4,
-      "comments": "Burt B"
-    },
-    {
-      "title": "Bohemian Rhapsody",
-      "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
-      "userId": 4,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822880322?alt=media&token=9a3d1abe-fb61-4548-b040-259123b7541c",
-      "comments": "",
-      "id": 26
-    },
-    {
-      "title": "She Always a Woman (Album Version)",
-      "lyrics": "She can kill with a smile, she can wound with her eyes\r\n She can ruin your faith with her casual lies\r\n And she only reveals what she wants you to see\r\n She hides like a child but she's always a woman to me\r\n \r\n She can lead you to love, she can take you or leave you\r\n She can ask for the truth but she'll never believe you\r\n And she'll take what you give her as long as it's free\r\n Yeah she steals like a thief but she's always a woman to me\r\n \r\n [Bridge]\r\n Oh, she takes care of herself, she can wait if she wants\r\n She's ahead of her time\r\n Oh, and she never gives out and she never gives in\r\n She just changes her mind\r\n \r\n And she'll promise you more than the Garden of Eden\r\n Then she'll carelessly cut you and laugh while you're bleeding\r\n But she brings out the best and the worst you can be\r\n Blame it all on yourself cause she's always a woman to me\r\n \r\n [Bridge]\r\n \r\n She is frequently kind and she's suddenly cruel\r\n She can do as she pleases, she's nobody's fool\r\n But she can't be convicted, she's earned her degree\r\n And the most she will do is throw shadows at you\r\n But she's always a woman to me",
-      "userId": 4,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568822953285?alt=media&token=dff3368c-7b4d-4336-a217-793507e893b7",
-      "comments": "",
-      "id": 27
-    },
-    {
-      "title": "She Always a Woman (Album Version)",
-      "lyrics": "She can kill with a smile, she can wound with her eyes\r\n She can ruin your faith with her casual lies\r\n And she only reveals what she wants you to see\r\n She hides like a child but she's always a woman to me\r\n \r\n She can lead you to love, she can take you or leave you\r\n She can ask for the truth but she'll never believe you\r\n And she'll take what you give her as long as it's free\r\n Yeah she steals like a thief but she's always a woman to me\r\n \r\n [Bridge]\r\n Oh, she takes care of herself, she can wait if she wants\r\n She's ahead of her time\r\n Oh, and she never gives out and she never gives in\r\n She just changes her mind\r\n \r\n And she'll promise you more than the Garden of Eden\r\n Then she'll carelessly cut you and laugh while you're bleeding\r\n But she brings out the best and the worst you can be\r\n Blame it all on yourself cause she's always a woman to me\r\n \r\n [Bridge]\r\n \r\n She is frequently kind and she's suddenly cruel\r\n She can do as she pleases, she's nobody's fool\r\n But she can't be convicted, she's earned her degree\r\n And the most she will do is throw shadows at you\r\n But she's always a woman to me",
-      "userId": 5,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568834013868?alt=media&token=93791184-3084-4eed-a56c-ab26e442b257",
-      "comments": "",
-      "id": 28
-    },
-    {
-      "title": "Hey Jude (Remastered 2015)",
-      "lyrics": "[Verse 1]\r\n Hey Jude, don't make it bad\r\n Take a sad song and make it better\r\n Remember to let her into your heart\r\n Then you can start to make it better\r\n \r\n [Verse 2]\r\n Hey Jude, don't be afraid\r\n You were made to go out and get her\r\n The minute you let her under your skin\r\n Then you begin to make it better\r\n \r\n [Verse 3]\r\n And anytime you feel the pain, hey Jude, refrain\r\n Don't carry the world upon your shoulders\r\n For well you know that it's a fool who plays it cool\r\n By making his world a little colder\r\n \r\n [Verse 4]\r\n Hey Jude, don't let me down\r\n You have found her, now go and get her\r\n (Let it out and let it in, Hey Jude)\r\n Remember to let her into your heart\r\n Then you can start to make it better\r\n \r\n [Verse 5]\r\n So let it out and let it in, hey Jude, begin\r\n You're waiting for someone to perform with\r\n And don't you know that it's just you, hey Jude, you'll do\r\n The movement you need is on your shoulder\r\n \r\n [Verse 6]\r\n Hey Jude, don't make it bad\r\n Take a sad song and make it better\r\n Remember to let her under your skin\r\n Then you'll begin to make it\r\n Better better better better better better, oh\r\n \r\n [Outro]\r\n Na na na na na, na na na, hey Jude\r\n Na na na na na, na na na, hey Jude...",
+      "title": "Baby Beluga",
+      "lyrics": "Baby Beluga in the deep blue sea\r\n Swim so wild and swim so free\r\n The heaven above and the sea below\r\n See the little white whale on the go\r\n Oh baby Beluga, oh baby Beluga, is the water warm?\r\n Is your mama home with you so happy?\r\n Way down under where the dolphins play\r\n Where you swim and splash all day\r\n Waves roll in and the waves roll out\r\n See the water squirting out of your spout\r\n Baby Beluga, oh, baby Beluga, sing your little song\r\n Sing for all your friends, we'll like to hear you\r\n When it's dark you're home and fed\r\n Curl up snug in your water bed\r\n Moon is shining and the stars are out\r\n Good night, little whale, goodnight\r\n Baby Beluga, oh, baby Beluga, with tomorrow's sun\r\n Another day's begun, you'll soon be waking\r\n Baby Beluga in the deep blue sea\r\n Swim so wild and swim so free\r\n The heaven above and the sea below\r\n And a little white whale on the go\r\n You're just a little white whale on the go",
       "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568922020932?alt=media&token=a7bf1111-f35a-4c58-8139-c551a4c93b4c",
-      "comments": "",
-      "artist": "The Beatles",
-      "id": 31
-    },
-    {
-      "id": 32,
-      "title": "Viva la Vida",
-      "lyrics": "[Verse 1]\r\n I used to rule the world\r\n Seas would rise when I gave the word\r\n Now in the morning I sleep alone\r\n Sweep the streets I used to own\r\n I used to roll the dice, feel the fear in my enemy's eyes\r\n Listen as the crowd would sing\r\n Now the old King is dead, long live the King\r\n One minute I held the key\r\n Next the walls were closed on me\r\n And I discovered that my castles stand\r\n Upon pillars of salt and pillars of sand\r\n \r\n [Chorus 1]\r\n I hear Jerusalem bells a-ringing\r\n Roman Cavalry choirs are singing\r\n Be my mirror, my sword and shield\r\n My missionaries in a foreign field\r\n For some reason I can't explain\r\n Once you go there was never\r\n Never an honest word\r\n And that was when I ruled the world\r\n \r\n [Verse 2]\r\n It was the wicked and wild wind\r\n Blew down the doors to let me in\r\n Shattered windows and the sound of drums\r\n People couldn't believe what I'd become\r\n Revolutionaries wait\r\n For my head on a silver plate\r\n Just a puppet on a lonely string\r\n Oh who would ever want to be king?\r\n \r\n [Chorus 2]\r\n I hear Jerusalem bells a-ringing\r\n Roman Cavalry choirs are singing\r\n Be my mirror, my sword and shield\r\n My missionaries in a foreign field\r\n For some reason I can't explain\r\n I know Saint Peter won't call my name\r\n Never an honest word\r\n But that was when I ruled the world\r\n I hear Jerusalem bells a-ringing\r\n Roman Cavalry choirs are singing\r\n Be my mirror, my sword and shield\r\n My missionaries in a foreign field\r\n For some reason I can't explain\r\n I know Saint Peter won't call my name\r\n Never an honest word\r\n But that was when I ruled the world",
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568922236356?alt=media&token=e03553f8-ae40-4ce0-a409-896a1e6a54e6",
-      "userId": 1,
-      "comments": "Michael's favorite song probably"
-    },
-    {
-      "title": "Iron Man",
-      "lyrics": "I am Iron Man!\r\n \r\n [Verse 1]\r\n Has he lost his mind?\r\n Can he see or is he blind?\r\n Can he walk at all\r\n Or if he moves will he fall?\r\n \r\n Is he live or dead?\r\n Has he thoughts within his head?\r\n We'll just pass him there\r\n Why should we even care?\r\n \r\n He was turned to steel\r\n In the great magnetic field\r\n When he traveled time\r\n For the future of mankind\r\n \r\n [Chorus]\r\n Nobody wants him\r\n He just stares at the world\r\n Planning his vengeance\r\n That he will soon unfurl\r\n \r\n [Verse 2]\r\n Now the time is here\r\n For Iron Man to spread fear\r\n Vengeance from the grave\r\n Kills the people he once saved\r\n \r\n [Chorus]\r\n Nobody wants him\r\n They just turn their heads\r\n Nobody helps him\r\n Now he has his revenge\r\n \r\n [Verse 3]\r\n Heavy boots of lead\r\n Fills his victims full of dread\r\n Running as fast as they can\r\n Iron Man lives again!",
-      "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568922431173?alt=media&token=2c5d6707-35f8-4321-91c4-ee0bc1b3d3f8",
-      "comments": "",
-      "artist": "Black Sabbath",
-      "id": 33
-    },
-    {
-      "title": "When She Loved Me",
-      "lyrics": "[Chorus]\r\n When somebody loved me, everything was beautiful\r\n Every hour we spent together lives within my heart\r\n \r\n [Post-Chorus]\r\n And when she was sad, I was there to dry her tears\r\n And when she was happy, so was I\r\n When she loved me\r\n \r\n [Verse 1]\r\n Through the summer and the fall\r\n We had each other, that was all\r\n Just she and I together, like it was meant to be\r\n And when she was lonely, I was there to comfort her\r\n And I knew that she loved me\r\n \r\n [Verse 2]\r\n So the years went by, I stayed the same\r\n And she began to drift away, I was left alone\r\n Still I waited for the day\r\n When she’d say\r\n \"I will always love you.\"\r\n \r\n [Verse 3]\r\n Lonely and forgotten, never thought she’d look my way\r\n She smiled at me and held me, just like she used to do\r\n Like she loved me, when she loved me\r\n \r\n [Chorus]\r\n When somebody loved me, everything was beautiful\r\n Every hour we spent together lives within my heart\r\n \r\n [Outro]\r\n When she loved me",
-      "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568981163278?alt=media&token=50c5ab3b-b2c2-47ff-930a-2f021b0f04a3",
-      "comments": "",
-      "artist": "Sarah McLachlan",
-      "id": 34
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1569532595603?alt=media&token=abfc93c8-db26-47fa-9a8a-33b3674b2d55",
+      "comments": "Gotta love this song",
+      "artist": "Raffi",
+      "videoURL": "https://www.youtube.com/watch?v=CDx9zqDpSik",
+      "id": 40
     },
     {
       "title": "Happy Birthday",
       "lyrics": "[Verse]\nHappy Birthday to you\nHappy Birthday to you\nHappy Birthday to Jane\nHappy Birthday to you",
       "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1568981207351?alt=media&token=05b3caa6-bbc3-4254-afa6-cff9e0507c7b",
-      "comments": "",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1569533193642?alt=media&token=b053de01-a71b-4714-acf6-67e47ec8622a",
+      "comments": "Great",
       "artist": "Happy Birthday Traditional",
-      "id": 35
+      "videoURL": "https://www.youtube.com/watch?v=wnmss7h5g9Y",
+      "id": 41
     }
   ],
   "themes": [
