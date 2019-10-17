@@ -2,20 +2,17 @@
   "users": [
     {
       "username": "noah",
-      "themeId": 1,
       "id": 1,
       "password": "n"
     },
     {
       "username": "elliot",
       "password": "e",
-      "themeId": 2,
       "id": 2
     },
     {
       "username": "kim",
       "password": "k",
-      "themeId": 2,
       "id": 3
     },
     {
@@ -36,14 +33,12 @@
   ],
   "songs": [
     {
+      "id": 40,
       "title": "Baby Beluga",
       "lyrics": "Baby Beluga in the deep blue sea\r\n Swim so wild and swim so free\r\n The heaven above and the sea below\r\n See the little white whale on the go\r\n Oh baby Beluga, oh baby Beluga, is the water warm?\r\n Is your mama home with you so happy?\r\n Way down under where the dolphins play\r\n Where you swim and splash all day\r\n Waves roll in and the waves roll out\r\n See the water squirting out of your spout\r\n Baby Beluga, oh, baby Beluga, sing your little song\r\n Sing for all your friends, we'll like to hear you\r\n When it's dark you're home and fed\r\n Curl up snug in your water bed\r\n Moon is shining and the stars are out\r\n Good night, little whale, goodnight\r\n Baby Beluga, oh, baby Beluga, with tomorrow's sun\r\n Another day's begun, you'll soon be waking\r\n Baby Beluga in the deep blue sea\r\n Swim so wild and swim so free\r\n The heaven above and the sea below\r\n And a little white whale on the go\r\n You're just a little white whale on the go",
-      "userId": 1,
       "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1569532595603?alt=media&token=abfc93c8-db26-47fa-9a8a-33b3674b2d55",
-      "comments": "Gotta love this song",
-      "artist": "Raffi",
-      "videoURL": "https://www.youtube.com/watch?v=CDx9zqDpSik",
-      "id": 40
+      "userId": 1,
+      "comments": "Gotta love this song"
     },
     {
       "title": "Happy Birthday",
@@ -56,28 +51,24 @@
       "id": 41
     },
     {
+      "title": "Black Dog",
+      "lyrics": "{Intro}\r\n \r\n [Verse 1]\r\n Hey, hey, mama, said the way you move\r\n Gonna make you sweat, gonna make you groove\r\n Ah, ah, child, way you shake that thing\r\n Gonna make you burn, gonna make you sting\r\n Hey, hey, baby, when you walk that way\r\n Watch your honey drip, I can't keep away\r\n \r\n [Chorus]\r\n Oh yeah, oh yeah, oh, oh, oh\r\n Oh yeah, oh yeah, oh, oh, oh\r\n \r\n [Verse 2]\r\n I got to roll, can't stand still\r\n Got a flaming heart, can't get my fill\r\n Eyes that shine, burning red\r\n Dreams of you all through my head\r\n Ah-ah, ah-ah\r\n Ah-ah, ah-ah\r\n Ah-ah, ah-ah, ahh\r\n \r\n [Bridge]\r\n Hey baby, oh baby, pretty baby\r\n Tell me would you do me now\r\n Hey baby, oh baby, pretty baby\r\n Move me while you groove me now\r\n \r\n [Verse 3]\r\n Take too long 'fore I found out\r\n What people mean by down and out\r\n Spent my money, took my car\r\n Started tellin' her friend she' gon' be a star\r\n I don't know, but I've been told\r\n A big-legged woman ain't got no soul\r\n \r\n [Chorus]\r\n Oh yeah, oh yeah, oh, oh, oh\r\n Oh yeah, oh yeah, oh, oh, oh\r\n \r\n [Verse 4]\r\n All I ask for, all I pray\r\n Steady rollin' woman gonna come my way\r\n Need a woman gonna hold my hand\r\n Won't tell me no lies, make me a happy man\r\n Ah-ah, ah-ah\r\n Ah-ah, ah-ah\r\n Ah-ah, ah-ah, ahh\r\n \r\n [Instrumental]\r\n \r\n [Outro]\r\n Hey baby,  pretty baby, oh baby\r\n Hey baby,  pretty baby, oh baby\r\n Hey baby,  pretty baby, oh baby",
+      "userId": 1,
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1569870335619?alt=media&token=2cfb4df0-4dd8-4b9f-8d18-3772c4a12c0d",
+      "comments": "Will got it to work!",
+      "artist": "Led Zeppelin",
+      "videoURL": "https://www.youtube.com/watch?v=yBuub4Xe1mw",
+      "id": 43
+    },
+    {
       "title": "Bohemian Rhapsody",
       "lyrics": "[Intro]\r\n Is this the real life? Is this just fantasy?\r\n Caught in a landslide, no escape from reality\r\n Open your eyes, look up to the skies and see\r\n I'm just a poor boy, I need no sympathy\r\n Because I'm easy come, easy go, little high, little low\r\n Any way the wind blows doesn't really matter to me, to me\r\n \r\n [Verse 1]\r\n Mama, just killed a man\r\n Put a gun against his head, pulled my trigger, now he's dead\r\n Mama, life had just begun\r\n But now I've gone and thrown it all away\r\n Mama, ooh, didn't mean to make you cry\r\n If I'm not back again this time tomorrow\r\n Carry on, carry on as if nothing really matters\r\n \r\n [Verse 2]\r\n Too late, my time has come\r\n Sends shivers down my spine, body's aching all the time\r\n Goodbye, everybody, I've got to go\r\n Gotta leave you all behind and face the truth\r\n Mama, ooh, (any way the wind blows)\r\n I don't want to die\r\n I sometimes wish I'd never been born at all\r\n \r\n [Guitar Solo]\r\n \r\n [Verse 3]\r\n I see a little silhouetto of a man\r\n Scaramouche, Scaramouche, will you do the Fandango?\r\n Thunderbolt and lightning, very, very fright'ning me\r\n (Galileo.) Galileo. (Galileo.) Galileo. Galileo figaro magnifico\r\n I'm just a poor boy, nobody loves me\r\n He's just a poor boy from a poor family\r\n Spare him his life from this monstrosity\r\n Easy come, easy go, will you let me go?\r\n Bismillah! No, we will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let him go!) Bismillah! We will not let you go\r\n (Let me go.) Will not let you go\r\n (Let me go.) Will not let you go. (Let me go.) Ah\r\n No, no, no, no, no, no, no\r\n (Oh mamma mia, mamma mia) Mamma mia, let me go\r\n Beelzebub has a devil put aside for me, for me, for me!\r\n \r\n [Verse 4]\r\n So you think you can stone me and spit in my eye?\r\n So you think you can love me and leave me to die?\r\n Oh, baby, can't do this to me, baby!\r\n Just gotta get out, just gotta get right outta here!\r\n \r\n [Guitar Solo]\r\n \r\n [Outro]\r\n Nothing really matters, anyone can see\r\n Nothing really matters\r\n Nothing really matters to me\r\n Any way the wind blows",
       "userId": 1,
-      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1569855663249?alt=media&token=793a8913-1d8a-446d-a023-56a592e62eac",
+      "audioURL": "https://firebasestorage.googleapis.com/v0/b/humm-47a5b.appspot.com/o/audioBlobs%2F1569938760049?alt=media&token=d24145fd-7039-4880-a3ba-82023069c62f",
       "comments": "",
       "artist": "Queen",
       "videoURL": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-      "id": 42
-    }
-  ],
-  "themes": [
-    {
-      "name": "defaultMode",
-      "id": 1
-    },
-    {
-      "name": "darkMode",
-      "id": 2
-    },
-    {
-      "name": "lightMode",
-      "id": 3
+      "id": 44
     }
   ]
 }

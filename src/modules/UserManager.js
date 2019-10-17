@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:8088"
+const remoteURL = "https://fierce-gorge-90762.herokuapp.com"
 
 export default {
     get(id) {
