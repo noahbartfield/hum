@@ -5,7 +5,6 @@ import 'firebase/storage'
 import AudioManager from '../modules/AudioManager'
 import YoutubeManager from '../modules/YoutubeManager'
 import AuddManager from "../modules/AuddManager";
-import auddToken from "../auddToken"
 import SongList from "./sidebar/SongList"
 import './Dashboard.css'
 import AddModal from "./mainFeature/AddModal"
@@ -143,7 +142,7 @@ class Dashboard extends Component {
                         } else if (foundSong.result !== null) {
                             // AuddManager.getLyrics(foundSong.result.list[0].artist, foundSong.result.list[0].title.split('(')[0])
                             const artistAndTitle = `${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}`
-                            fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=${auddToken}`).then(data => data.json())
+                            fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=${process.env.REACT_APP_AUDD_KEY}`).then(data => data.json())
                                 .then(lyrics => {
                                     if (lyrics.result.length !== 0) {
                                         console.log(lyrics)
