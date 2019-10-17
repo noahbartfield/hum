@@ -1,4 +1,4 @@
-const url = 'http://localhost:8088/songs';
+const url = 'https://fierce-gorge-90762.herokuapp.com/songs';
 
 export default {
     get(id) {
