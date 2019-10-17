@@ -5,6 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 import Hum from './Hum'
 import './index.css'
 import * as firebase from "firebase/app";
+require('dotenv').config()
 
 const firebaseConfig = {
   apiKey: "AIzaSyB_HhkFrcWuHvipwriVM08BV0mxFDBmbmU",
