@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HUM
 
-## Available Scripts
+humsomething.netlify.com
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Hum is a single page application for those of us who can only remember melodies.
+Hum takes audio input from the user and returns a matching song title, lyrics, artist,  and YouTube link.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Login and Registration
 
-### `npm run build`
+When launching Hum, the user will be brought to a login page and will be prompted to either login or signup.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dashboard
 
-### `npm run eject`
+After logging into Hum, the user will see a large record button in the center of the page and a hamburger button on the top right corner. Given the user wants to hum a song, the record button can be clicked, a notification will appear for the user to approve the use of a microphone in the browser, and audio input can be captured. The user can then click the button again to stop recording and wait for results to populate. The user can view the results and either dismiss or save the song information.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The user also has the option to choose a previously recorded file instead of humming live. This recording is then processed in the same way. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Saving/Editing/Deleting Songs
 
-## Learn More
+Given the user has saved songs, songs can be viewed in a collapsible sidebar. These songs can be commented on or deleted. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+------------------
+Hum is built using:
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+React.js
+Semantic UI React
+Firebase
+AudD Api
+YouTube Data Api
+MediaRecorder Api
