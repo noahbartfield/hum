@@ -7,6 +7,16 @@ humsomething.netlify.com
 Hum is a single page application for those of us who can only remember melodies.
 Hum takes audio input from the user and returns a matching song title, lyrics, artist,  and YouTube link.
 
+--------------
+
+Before running hum, the user must:
+
+npm install
+
+then
+
+npm start
+
 
 
 Login and Registration
