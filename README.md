@@ -41,9 +41,9 @@ Given the user has saved songs, songs can be viewed in a collapsible sidebar. Th
 ------------------
 Hum is built using:
 
-React.js
-Semantic UI React
-Firebase
-AudD Api
-YouTube Data Api
+React.js / 
+Semantic UI React / 
+Firebase / 
+AudD Api / 
+YouTube Data Api / 
 MediaRecorder Api
