@@ -8,16 +8,6 @@ Hum takes audio input from the user and returns a matching song title, lyrics, a
 
 --------------
 
-Before running hum, the user must:
-
-npm install
-
-then
-
-npm start
-
-
-
 <b>Login and Registration</b>
 
 When launching Hum, the user will be brought to a login page and will be prompted to either login or signup.
@@ -46,6 +36,9 @@ The user has the option to choose a previously recorded file instead of humming 
 
 ![HUM Demo 2](humDemo3.gif)
 
+------------------
+
+Before running hum, the user must install all relevant packages associated with Hum using npm-install
 
 ------------------
 Hum is built using:
