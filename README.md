@@ -34,7 +34,7 @@ After logging into Hum, the user will see a large record button in the center of
 
 <b>Viewing Song Details and CRUD Functionality</b>
 
-When viewing the song details, the user can view the lyrics, title, name of artist, and YouTube link for the found song. There is also a field for which the user can choose to enter a comment about the song. The user can input these comments before saving and/or when viewing and editing previously saved songs. The user has the option to delete any previously saved song from the sidebar view.
+When viewing the song details, the user can view the lyrics, title, name of artist, and YouTube link for the found song. There is also a field for which the user can choose to enter a comment about the song. The user can input these comments before saving and/or when viewing and editing previously saved songs. The user has the option view, edit, or delete any previously saved song from the collapsible sidebar view.
 
 ![HUM Demo 2](humDemo2.gif)
 
@@ -45,17 +45,6 @@ When viewing the song details, the user can view the lyrics, title, name of arti
 The user has the option to choose a previously recorded file instead of humming live. This recording is then processed in the same way as a live input. 
 
 ![HUM Demo 2](humDemo3.gif)
-
-----------------
-
-
-
-
-
-
-<b>Saving/Editing/Deleting Songs</b>
-
-Given the user has saved songs, songs can be viewed in a collapsible sidebar. These songs can be commented on or deleted. 
 
 
 ------------------
