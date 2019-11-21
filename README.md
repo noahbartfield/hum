@@ -29,7 +29,7 @@ When launching Hum, the user will be brought to a login page and will be prompte
 
 After logging into Hum, the user will see a large record button in the center of the page and a hamburger button on the top right corner. Given the user wants to hum a song, the record button can be clicked, a notification will appear for the user to approve the use of a microphone in the browser, and audio input can be captured. The user can then click the button again to stop recording and wait for results to populate. The user can view the results and either dismiss or save the song information.
 
-![HUM Demo](ezgif.com-optimize)
+![HUM Demo](ezgif.com-optimize.gif)
 
 The user also has the option to choose a previously recorded file instead of humming live. This recording is then processed in the same way. 
 
