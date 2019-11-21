@@ -1,6 +1,6 @@
 <b>HUM</b>
 
-[humsomething.netlify.com](https://www.humsomething.netlify.com)
+[humsomething.netlify.com](http://humsomething.netlify.com)
 
 
 Hum is a single page application for those of us who can only remember melodies.
