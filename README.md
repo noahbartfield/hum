@@ -22,7 +22,7 @@ npm start
 
 When launching Hum, the user will be brought to a login page and will be prompted to either login or signup.
 
-
+![HUM Login](humDemoLogin.gif)
 
 <b>Dashboard</b>
 
