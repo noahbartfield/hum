@@ -33,6 +33,8 @@ After logging into Hum, the user will see a large record button in the center of
 
 ![HUM Demo 2](humDemo2.gif)
 
+![HUM Demo 2](humDemo3.gif)
+
 The user also has the option to choose a previously recorded file instead of humming live. This recording is then processed in the same way. 
 
 
