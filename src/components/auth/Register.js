@@ -29,19 +29,19 @@ class Register extends Component {
             } else if (this.state.username.length === 0 || this.state.password.length === 0) {
                 window.alert("Please fill out all fields")
             } else {
-            UserManager.post(this.state).then((object) => {
-                sessionStorage.setItem(
-                    "credentials",
-                JSON.stringify({
-                    username: this.state.username,
-                    password: this.state.password,
-                    id: object.id
+                UserManager.post(this.state).then((object) => {
+                    sessionStorage.setItem(
+                        "credentials",
+                        JSON.stringify({
+                            username: this.state.username,
+                            password: this.state.password,
+                            id: object.id
+                        })
+                    )
+                    this.props.history.push("/");
                 })
-            )
-                this.props.history.push("/");
-            })
-        }
-    })
+            }
+        })
     }
 
     handleCancel = (event) => {
@@ -56,30 +56,30 @@ class Register extends Component {
                     <h1 className="title">h u m</h1>
                 </div>
                 <form onSubmit={this.handleRegister}>
-                <div className="formField">
+                    <div className="formField">
                         <h3 className="subtitle">Register</h3>
-                        </div>
-                        <div className="formField">
-                            <label htmlFor="inputUsername"></label>
-                            <Input onChange={this.handleFieldChange} type="username"
-                                id="username"
-                                placeholder="username"
-                                required="" autoFocus="" />
-                            <label htmlFor="inputPassword"></label>
-                            <Input onChange={this.handleFieldChange} type="password"
-                                id="password"
-                                placeholder="password"
-                                required="" />
-                        </div>
-                        <div className="submitOrRegister">
+                    </div>
+                    <div className="formField">
+                        <label htmlFor="inputUsername"></label>
+                        <Input onChange={this.handleFieldChange} type="username"
+                            id="username"
+                            placeholder="username"
+                            required="" autoFocus="" />
+                        <label htmlFor="inputPassword"></label>
+                        <Input onChange={this.handleFieldChange} type="password"
+                            id="password"
+                            placeholder="password"
+                            required="" />
+                    </div>
+                    <div className="submitOrRegister">
                         <Button className="ui red circular button" type="submit">
                             Submit
                         </Button>
-                        </div>
-                        <div  className="submitOrRegister">
+                    </div>
+                    <div className="submitOrRegister">
                         <br></br>
                         <Link onClick={this.handleCancel} className="nav-link_login" to="/register">Back to Login</Link>
-                        </div>
+                    </div>
                 </form></div>
         )
     }

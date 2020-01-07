@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-// import EditSongModal from "./EditSongModal"
-// import EditModalHelper from './EditModalHelper';
-// import './Song.css'
 import { Button, Modal, Icon } from 'semantic-ui-react'
-// import EditModal from './EditModal'
 import AudioManager from '../../modules/AudioManager'
 import './SongButton.css'
 
@@ -75,34 +71,33 @@ class SongButton extends Component {
         } else {
             return (
                 <>
-                <div className="songButtonContainer">
-                    <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button className="trackButton">"{this.props.song.title.split('(')[0]}"</Button>} closeIcon>
-                        <Modal.Header className="modalHeader">{this.props.song.title.split('(')[0]}</Modal.Header>
-                        <div className="lyricsAndComments">
-                            <Modal.Content className="lyricsInModal">
-                                {this.props.song.artist !== "" &&
-                                    <h5 className="artistName">{this.props.song.artist}</h5>
-                                }
-                                {this.props.song.lyrics !== "" &&
-                                    this.props.song.lyrics.replace("I ", "i ").replace("I'm", "i'm").replace("I'll", "i'll").replace("I've", "i've").split(/(?=[A-Z])/).map(lyric => {
-                                        return <p key={Math.random() * 9999999999999}>{lyric.replace("[", "").replace("]", "")}</p>
-                                    })
-                                }
-                                {/* <p>{this.props.song.lyrics}</p> */}
-                            </Modal.Content>
-                            <Modal.Content>
-                                <h3 className="commentsTitle" >Comments</h3>
-                                <label htmlFor="comments"></label>
-                                <textarea className="textArea" rows="20" cols="15" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
-                                <p className="videoLink"><a href={this.props.song.videoURL} target="_blank" rel="noopener noreferrer"><i>Video:</i> <strong>{this.props.song.title.split('(')[0]}</strong></a></p>
-                            </Modal.Content>
-                        </div>
-                        <Button className="saveButton" attached onClick={this.updateExistingSong}>Save</Button>
-                    </Modal>
-                    <Modal className="mini" onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button small"><Icon name="trash alternate outline" /></Button>} closeIcon>
-                        <Modal.Header className="deleteModal">Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
-                        <Button className="deleteButtonModal" attached onClick={() => this.props.deleteSong(songId)}>Delete</Button>
-                    </Modal>
+                    <div className="songButtonContainer">
+                        <Modal onClose={this.close} onOpen={this.open} open={this.state.showModal} trigger={<Button className="trackButton">"{this.props.song.title.split('(')[0]}"</Button>} closeIcon>
+                            <Modal.Header className="modalHeader">{this.props.song.title.split('(')[0]}</Modal.Header>
+                            <div className="lyricsAndComments">
+                                <Modal.Content className="lyricsInModal">
+                                    {this.props.song.artist !== "" &&
+                                        <h5 className="artistName">{this.props.song.artist}</h5>
+                                    }
+                                    {this.props.song.lyrics !== "" &&
+                                        <p className="lineBreaks">
+                                            {this.props.song.lyrics}
+                                        </p>
+                                    }
+                                </Modal.Content>
+                                <Modal.Content>
+                                    <h3 className="commentsTitle" >Comments</h3>
+                                    <label htmlFor="comments"></label>
+                                    <textarea className="textArea" rows="20" cols="25" id="comments" onChange={this.handleFieldChange} value={this.state.comments}></textarea>
+                                    <p className="videoLink"><a href={this.props.song.videoURL} target="_blank" rel="noopener noreferrer"><i>Video:</i> <strong>{this.props.song.title.split('(')[0]}</strong></a></p>
+                                </Modal.Content>
+                            </div>
+                            <Button className="saveButton" attached onClick={this.updateExistingSong}>Save</Button>
+                        </Modal>
+                        <Modal className="mini" onClose={this.closeDeleteModal} onOpen={this.openDeleteModal} open={this.state.showDeleteModal} trigger={<Button className="ui deleteButton circular icon button small"><Icon name="trash alternate outline" /></Button>} closeIcon>
+                            <Modal.Header className="deleteModal">Delete "{this.props.song.title.split('(')[0]}"?</Modal.Header>
+                            <Button className="deleteButtonModal" attached onClick={() => this.props.deleteSong(songId)}>Delete</Button>
+                        </Modal>
                     </div>
 
                 </>

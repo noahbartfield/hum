@@ -4,7 +4,6 @@
 
 body {
     background-color: #eefbfc;
-    /* color: rgb(56, 50, 47); */
 }
 
 .title {
@@ -19,20 +18,15 @@ body {
     font-weight: 100 !important;
     word-spacing: 1em;
     color: grey !important;
-    /* padding-top: 75px !important; */
 }
 .uploadText {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 100 !important;
-    /* word-spacing: 1em; */
     color: grey !important;
-    /* padding-top: 75px !important; */
 }
 
 .dashboardContainer {
     height: 90vh;
-    /* display: flex;
-    justify-content: space-between; */
 }
 
 .navBar {
@@ -64,9 +58,6 @@ body {
 
 .sidebar {
     background-color: #db2828 !important;
-    /* opacity: 0.8; */
-    /* flex-basis: 30%; */
-    /* visibility: hidden; */
 }
 
 .recordButton {
@@ -88,8 +79,6 @@ body {
 .fileUploadContainer {
     font-family: 'Lato', sans-serif;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .submitUpload {
@@ -174,6 +163,10 @@ body {
     font-style: italic;
 }
 
+.lineBreaks {
+    white-space: pre-line;
+}
+
 .lyricsAndComments {
     font-family: 'Lato', sans-serif !important;
     display: flex;
@@ -200,7 +193,6 @@ body {
 
 .textArea:focus {
     color: black;
-    /* font-size: 11px; */
 }
 
 .videoLink {
@@ -209,15 +201,8 @@ body {
 
 .saveButton {
     background-color: grey!important;
-    /* opacity: 0.8; */
     color: #eefbfc !important;
 }
-
-
-/* 
-.saveButton:hover {
-    color: #ffffff !important;
-} */
 
 @keyframes blink {
     0% {opacity: 1;}

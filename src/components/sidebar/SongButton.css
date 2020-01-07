@@ -5,6 +5,10 @@
     justify-content: space-between;
 }
 
+.lineBreaks {
+    white-space: pre-line;
+}
+
 .deleteButton {
     margin-bottom: 20px !important;
     width: 40px !important;
@@ -88,14 +92,3 @@
     background-color: grey !important;
     color: #eefbfc !important;
 }
-
-/* .saveButton {
-    background-color: #db2828 !important; */
-    /* opacity: 0.8; */
-    /* color: #ecc3c3 !important;
-} */
-
-/* .saveButton:hover {
-    color: #ffffff !important;
-    opacity: 1;
-} */

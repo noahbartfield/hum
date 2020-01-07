@@ -58,11 +58,9 @@ class Dashboard extends Component {
     toggleMicrophone = () => {
         if (this.state.recording) {
             this.stopRecording()
-            console.log("stop recording")
 
         } else {
             this.startRecording()
-            console.log("start recording")
         }
     }
 
@@ -85,15 +83,12 @@ class Dashboard extends Component {
             let chunks = [];
             this.state.mediaRecorder.onstop = e => {
                 const blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
-                // const audioURL = window.URL.createObjectURL(blob);
-                console.log(blob)
                 this.setState({
                     audio: blob
                 })
                 this.getSong()
             }
             this.state.mediaRecorder.ondataavailable = e => {
-                console.log("1234")
                 chunks.push(e.data);
             }
         })
@@ -107,7 +102,6 @@ class Dashboard extends Component {
         return childRef.put(this.state.audio)
             .then(response => response.ref.getDownloadURL())
             .then(url => {
-                console.log("upload")
                 this.setState({
                     audioURL: url,
                     noResults: false
@@ -131,7 +125,6 @@ class Dashboard extends Component {
             } else {
                 AuddManager.get(this.state.audioURL)
                     .then(foundSong => {
-                        console.log(foundSong)
                         if (foundSong.error || foundSong.result === null || foundSong.result.length === 0) {
                             this.setState({
                                 noResults: true,
@@ -140,15 +133,11 @@ class Dashboard extends Component {
                                 fileField: Math.random() * 99999999999999
                             })
                         } else if (foundSong.result !== null) {
-                            // AuddManager.getLyrics(foundSong.result.list[0].artist, foundSong.result.list[0].title.split('(')[0])
                             const artistAndTitle = `${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}`
                             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=${process.env.REACT_APP_AUDD_KEY}`).then(data => data.json())
                                 .then(lyrics => {
                                     if (lyrics.result.length !== 0) {
-                                        console.log(lyrics)
-                                        console.log(lyrics.result[0].lyrics)
                                         YoutubeManager.get(artistAndTitle).then(result => {
-                                            console.log("youtube", result)
                                             this.setState({
                                                 videoURL: `https://www.youtube.com/watch?v=${result.items[0].id.videoId}`
                                             })
@@ -164,7 +153,6 @@ class Dashboard extends Component {
                                         })
                                         this.showModal()
                                     } else {
-                                        console.log("NO LYRICS")
                                         this.setState({
                                             noResults: true,
                                             loading: false,
@@ -275,10 +263,9 @@ class Dashboard extends Component {
                             vertical
                             direction='right'
                             visible={visible}
-                            // width='medium'
                         >
                             <div id="logOutContainer">
-                                <Button id="logOutButton"onClick={this.signOut}>sign out as {currentUser.username}</Button>
+                                <Button id="logOutButton" onClick={this.signOut}>sign out as {currentUser.username}</Button>
                             </div>
                             <SongList
                                 updateSongs={this.updateSongs}
@@ -295,25 +282,25 @@ class Dashboard extends Component {
                                         <div className="controls">
 
                                             <div className="recordButton">
-                                                {isLoading 
-                                                ? <Button
-                                                    loading
-                                                    disabled
-                                                    onClick={this.toggleMicrophone}
-                                                    className="ui circular icon button red massive">
-                                                        <Icon name="spinner"/>
+                                                {isLoading
+                                                    ? <Button
+                                                        loading
+                                                        disabled
+                                                        onClick={this.toggleMicrophone}
+                                                        className="ui circular icon button red massive">
+                                                        <Icon name="spinner" />
                                                     </Button>
-                                                : <Button
-                                                    onClick={this.toggleMicrophone}
-                                                    className=
-                                                    {this.state.recording
-                                                        ? "blink ui circular icon button red massive"
-                                                        : "ui circular icon button red massive"}>    
-                                                    {this.state.recording
-                                                        ? <Icon name='stop' />
-                                                        : <Icon name='microphone' />}
-                                                </Button>
-                                            }
+                                                    : <Button
+                                                        onClick={this.toggleMicrophone}
+                                                        className=
+                                                        {this.state.recording
+                                                            ? "blink ui circular icon button red massive"
+                                                            : "ui circular icon button red massive"}>
+                                                        {this.state.recording
+                                                            ? <Icon name='stop' />
+                                                            : <Icon name='microphone' />}
+                                                    </Button>
+                                                }
                                             </div>
                                         </div>
                                     </main>
@@ -324,38 +311,38 @@ class Dashboard extends Component {
                                     </div>
                                 }
                                 {(this.state.active && !this.state.recording) &&
-                                <div className="viewResultsButton">
-                                    <AddModal
-                                        {...this.props}
-                                        videoURL={this.state.videoURL}
-                                        title={this.state.title}
-                                        lyrics={this.state.lyrics}
-                                        artist={this.state.artist}
-                                        comments={this.state.comments}
-                                        addSong={this.addSong}
-                                        handleFieldChange={this.handleFieldChange}
-                                        close={this.close}
-                                        open={this.open}
-                                    />
-                                </div>
+                                    <div className="viewResultsButton">
+                                        <AddModal
+                                            {...this.props}
+                                            videoURL={this.state.videoURL}
+                                            title={this.state.title}
+                                            lyrics={this.state.lyrics}
+                                            artist={this.state.artist}
+                                            comments={this.state.comments}
+                                            addSong={this.addSong}
+                                            handleFieldChange={this.handleFieldChange}
+                                            close={this.close}
+                                            open={this.open}
+                                        />
+                                    </div>
                                 }
                                 {!this.state.recording
-                                ? <div className="uploadContainer">
-                                <Form className="fileUploadContainer" onSubmit={this.getSong}>
-                                    <h5 className="uploadText">or upload</h5>
-                                    <Form.Field
-                                        key={this.state.fileField}
-                                        className="fileUploadField"
-                                        control="input"
-                                        type="file"
-                                        onChange={(e) => this.setState({ audio: e.target.files[0] })}
-                                    />
-                                    {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui grey button tiny submitUpload" type="submit" content="upload" />}
-                                </Form>
-                                </div>
-                                : <h5 className="recordingInProcess">
-                                    <span className="rec1"><Icon name="music"/></span><span className="rec2"><Icon name="music"/></span><span className="rec3"><Icon name="music"/></span><span className="rec4"><Icon name="music"/></span><span className="rec5"><Icon name="music"/></span>
-                                </h5>
+                                    ? <div className="uploadContainer">
+                                        <Form className="fileUploadContainer" onSubmit={this.getSong}>
+                                            <h5 className="uploadText">or upload</h5>
+                                            <Form.Field
+                                                key={this.state.fileField}
+                                                className="fileUploadField"
+                                                control="input"
+                                                type="file"
+                                                onChange={(e) => this.setState({ audio: e.target.files[0] })}
+                                            />
+                                            {(!isLoading && (this.state.audio !== "" && this.state.audio !== undefined)) && <Button className="ui grey button tiny submitUpload" type="submit" content="upload" />}
+                                        </Form>
+                                    </div>
+                                    : <h5 className="recordingInProcess">
+                                        <span className="rec1"><Icon name="music" /></span><span className="rec2"><Icon name="music" /></span><span className="rec3"><Icon name="music" /></span><span className="rec4"><Icon name="music" /></span><span className="rec5"><Icon name="music" /></span>
+                                    </h5>
                                 }
                             </div>
                         </Sidebar.Pusher>

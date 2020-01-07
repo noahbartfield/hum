@@ -50,30 +50,30 @@ class Login extends Component {
                     <h1 className="title">h u m</h1>
                 </div>
                 <form onSubmit={this.handleLogin}>
-                <div className="formField">
+                    <div className="formField">
                         <h3 className="subtitle">Login</h3>
-                        </div>
-                        <div className="formField">
-                            <label htmlFor="inputUsername"></label>
-                            <Input onChange={this.handleFieldChange} type="username"
-                                id="username"
-                                placeholder="username"
-                                required="" autoFocus="" />
-                            <label htmlFor="inputPassword"></label>
-                            <Input onChange={this.handleFieldChange} type="password"
-                                id="password"
-                                placeholder="password"
-                                required="" />
-                        </div>
-                        <div className="submitOrRegister">
+                    </div>
+                    <div className="formField">
+                        <label htmlFor="inputUsername"></label>
+                        <Input onChange={this.handleFieldChange} type="username"
+                            id="username"
+                            placeholder="username"
+                            required="" autoFocus="" />
+                        <label htmlFor="inputPassword"></label>
+                        <Input onChange={this.handleFieldChange} type="password"
+                            id="password"
+                            placeholder="password"
+                            required="" />
+                    </div>
+                    <div className="submitOrRegister">
                         <Button className="ui red circular button" type="submit">
                             Submit
                         </Button>
-                        </div>
-                        <div  className="submitOrRegister">
+                    </div>
+                    <div className="submitOrRegister">
                         <br></br>
                         <Link className="nav-link_login" to="/register">New User?</Link>
-                        </div>
+                    </div>
                 </form></div>
         )
     }
