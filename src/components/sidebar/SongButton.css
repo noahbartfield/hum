@@ -29,7 +29,6 @@
     color: white !important;
     opacity: 1;
     font-size: 16px !important;
-    /* text-shadow: 1px 1px #ecc3c3 !important; */
 }
 
 .trackButton:hover {
@@ -55,6 +54,7 @@
 }
 
 .lyricsInModal {
+    white-space: pre-line;
     padding: 5px;
     width: 600px;
     height: 400px;
@@ -62,7 +62,6 @@
 }
 
 .commentsTitle {
-    /* color: grey; */
     padding: 5px;
 }
 
@@ -88,14 +87,3 @@
     background-color: grey !important;
     color: #eefbfc !important;
 }
-
-/* .saveButton {
-    background-color: #db2828 !important; */
-    /* opacity: 0.8; */
-    /* color: #ecc3c3 !important;
-} */
-
-/* .saveButton:hover {
-    color: #ffffff !important;
-    opacity: 1;
-} */
