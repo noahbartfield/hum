@@ -85,7 +85,6 @@ class Dashboard extends Component {
             let chunks = [];
             this.state.mediaRecorder.onstop = e => {
                 const blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
-                // const audioURL = window.URL.createObjectURL(blob);
                 console.log(blob)
                 this.setState({
                     audio: blob
@@ -93,7 +92,6 @@ class Dashboard extends Component {
                 this.getSong()
             }
             this.state.mediaRecorder.ondataavailable = e => {
-                console.log("1234")
                 chunks.push(e.data);
             }
         })
@@ -140,7 +138,6 @@ class Dashboard extends Component {
                                 fileField: Math.random() * 99999999999999
                             })
                         } else if (foundSong.result !== null) {
-                            // AuddManager.getLyrics(foundSong.result.list[0].artist, foundSong.result.list[0].title.split('(')[0])
                             const artistAndTitle = `${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}`
                             fetch(`https://api.audd.io/findLyrics/?q=${foundSong.result.list[0].artist} ${foundSong.result.list[0].title.split('(')[0]}&api_token=${process.env.REACT_APP_AUDD_KEY}`).then(data => data.json())
                                 .then(lyrics => {
@@ -275,7 +272,6 @@ class Dashboard extends Component {
                             vertical
                             direction='right'
                             visible={visible}
-                            // width='medium'
                         >
                             <div id="logOutContainer">
                                 <Button id="logOutButton"onClick={this.signOut}>sign out as {currentUser.username}</Button>

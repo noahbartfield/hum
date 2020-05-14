@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-// import SongManager from '../../modules/SongManager'
 import SongButton from './SongButton'
 import AudioManager from '../../modules/AudioManager'
 import './SongList.css'
@@ -26,7 +25,6 @@ class SongList extends Component {
                                 updateSongs={this.props.updateSongs}
                                 deleteSong={this.deleteSong}
                                 {...this.props}
-                                // didMountFunction={this.didMountFunction}
                             />
                         }
                         )}
